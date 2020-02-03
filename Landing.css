@@ -1,0 +1,32 @@
+html
+{
+	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
+}
+a
+{
+	text-decoration: none;
+	color:white;
+}
+.top_section
+{
+	color: white;
+	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
+	text-align: center;
+}
+.top_inner
+{
+	background-color: black;
+	margin: 2rem;
+}
+.nav_button
+{
+	border-radius: 3px;
+	display: inline-block;
+	color:black;
+	background-color: white;
+}
+.nav_button:hover
+{
+	background-color: blue;
+	color:white;
+}
