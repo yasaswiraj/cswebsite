@@ -15,6 +15,12 @@ img{
 body{
 	display:grid;
 }
+.sticky
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
 .content
 {
 	color:white;
