@@ -1,8 +1,33 @@
 html
 {
+	height: 100%;
 	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
 }
-a
+h2{
+			text-align: center;
+}
+img{
+	 display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: auto;
+}
+body{
+	display:grid;
+}
+.content
+{
+	color:white;
+	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
+}
+
+.hi {
+	font-size: 25px;
+	font-family: fantasy;
+	padding: 50px;
+	margin:20px;
+	}
+.anchors
 {
 	text-decoration: none;
 	color:white;
@@ -16,14 +41,17 @@ a
 .top_inner
 {
 	background-color: black;
+	border-radius: 2rem;
+	padding:2rem;
 	margin: 2rem;
 }
 .nav_button
 {
 	border-radius: 3px;
 	display: inline-block;
-	color:black;
-	background-color: white;
+	padding: 2rem;
+	color:white;
+	background-color: black;
 }
 .nav_button:hover
 {
