@@ -1,11 +1,12 @@
-window.onscroll = function(event){
-		stickyScroll(event);
+window.onscroll = function(){
+	console.log(window.scrollY);
+	stickyScroll();
 }
 
 var navbar = document.getElementById('navbar');
 var nbOffset = navbar.offsetTop;
 
-function stickyScroll(event)
+function stickyScroll()
 {
 	event.preventDefault();
 	if(window.pageYOffset >= nbOffset)
