@@ -72,13 +72,15 @@ body{
     box-sizing: border-box;
 }
 
+/*-------------------------Fold-Scroll---------------------------------------*/
+
+
 html, body {
     font-family: Consolas, monospace;
+    background: #000;
     padding: 0;
     margin: 0;
 }
-
-/* Demo */
 
 .quotes {
     position: absolute;
