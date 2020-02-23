@@ -1,0 +1,39 @@
+body
+{
+	height: 100%;
+	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
+}
+body{
+	display:grid;
+}
+.h1 {font-size: 120px;
+	padding: 20px;
+	color: rgb(400,0,600);
+	font-style: italic;
+	 font-family: "Times New Roman", Times, serif;
+	background-color: #001;
+}
+
+.display-4 h1{
+	background-color: #001;	
+}
+.head{
+
+	color: rgb(200,20,40);
+	padding-bottom: 20px;
+}
+.cctext{
+	color: rgb(500,0,500);
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.cctext2{
+	color: rgb(400,0,2000);
+	font-size: 30px
+}
+img{
+	margin-left: 100px;
+}
+li{
+	padding: 10px;
+}
