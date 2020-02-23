@@ -41,6 +41,7 @@ body{
 .top_section
 {
 	color: white;
+	padding:1rem;
 	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
 	text-align: center;
 }
@@ -48,14 +49,14 @@ body{
 {
 	background-color: black;
 	border-radius: 2rem;
-	padding:2rem;
-	margin: 2rem;
+	margin: 1rem;
 }
 .nav_button
 {
 	border-radius: 3px;
 	display: inline-block;
-	padding: 2rem;
+	padding: 1.5rem;
+	margin: 1.5rem;
 	color:white;
 	background-color: black;
 }
@@ -63,4 +64,39 @@ body{
 {
 	background-color: blue;
 	color:white;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Consolas, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+/* Demo */
+
+.quotes {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+}
+
+.quotes article {
+    border-bottom: 1px dashed #ddd;
+    text-align: justify;
+    line-height: 1.8;
+    background: #000;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 80px 40px;
+    margin: 0 auto;
+    width: 80%;
+    color: #333;
 }

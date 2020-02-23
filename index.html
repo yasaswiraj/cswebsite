@@ -11,22 +11,19 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-		<!--THE FOLLOWING LINES ARE FOR FULLPAGE.JS -->
-		<link rel="stylesheet" type="text/css" href="./fullpage.css" />
-		<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
-		<script src="./vendors/easings.min.js"></script>
-		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-		<script type="text/javascript" src="./vendors/scrolloverflow.min.js"></script>
-		<script type="text/javascript" src="./fullpage.js"></script>
+		<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
 </head>
 
 
 <body>
 
-	<div id="fullpage">
+	<section class="quotes">
 
-		<div class="section top_section" id="firstSection">
+		<article>
+		<div class="top_section">
 			<!--This is the top section of the page -->
 			<div class="top_inner">
 				<h1>WELCOME TO THE COOLEST FORUM OF VBIT!</h1>
@@ -41,8 +38,10 @@
 				<div class="nav_button col"><a class="anchors" href="">get in touch</a></div>
 			</div>
 		</div>
+		</article>
 		<!--This is the middle section of the page-->
-		<div class="section content" id="secondSection">
+		<article>
+			 <div class="content">
 			<h2>Learn</h2>
 			<p>
 				<img src="learn.jpg" width="200" height="200">
@@ -55,8 +54,9 @@
 		         </center>
 		     </p>
 		</div>
-
-			 <div class="section content" id="thirdSection">
+		</article>
+		<article>
+			 <div class="content">
 			    <h2>Challenge</h2>
 			    <p>
 				<img src="challenge.jpg" width="200" height="200">
@@ -64,8 +64,10 @@
 					The ultimate measure of a man is not where he stands inmoments of comfort andconvenience, but where he stands at times of challenge and controversy .So we strongly believe the above quote Until we challenge ourself with others you can't learn what are our standards in our learning
 				</center>
 			     </p>
-			 <div>
-			 <div class="section content" id="fourthSection">
+			 </div>
+		</article>
+		<article>
+			 <div class="content">
 				 <h2>Innovate</h2>
 			    	 <p>
 						<img src="inovate.jpg" width="200" height="200">
@@ -84,7 +86,9 @@
 			         	</center>
 			     	</p>
 			</div>
-	</div>    
+		</article>
+	</section>    
+
 	<script src="./index.js"></script>
 </body>
 </html>
