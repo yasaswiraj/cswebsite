@@ -1,5 +1,5 @@
 # cS(); website
-Official Website of coding.Studio( ) VBIT.
+Official Website of coding.Studio( ); VBIT.
 
 # Build Status
 
