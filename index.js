@@ -185,3 +185,4 @@ $( '.quotes' ).foldscroll({
   perspective: 900,
   margin: '220px'
 });
+
