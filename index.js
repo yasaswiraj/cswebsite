@@ -62,8 +62,8 @@
             $this.css({ overflow: 'scroll' });
 
             $this.on( 'scroll', function() {
-
                 // Store scroll amount
+
                 var st = $this.scrollTop();
 
                 // Store viewport properties
@@ -126,7 +126,9 @@
                                     'transform-origin': '50%' + ( et < vt ? '100%' : '0%' ),
                                     'transform': rot.replace( 'θ', t )
                                 }));
-
+                                
+                                
+                                
                                 // Update shading overlay
                                 if ( opts.shading )
                                     $shading.css( 'opacity', 1.0 - p ).show();
@@ -134,11 +136,15 @@
                             } else {
 
                                 show = false;
+
                             }
                         }
+
                     }
 
+
                     // Hide items outside of the viewport
+
                     $item.css( 'visibility', show ? 'visible' : 'hidden' );
                 });
             });
@@ -185,4 +191,3 @@ $( '.quotes' ).foldscroll({
   perspective: 900,
   margin: '220px'
 });
-

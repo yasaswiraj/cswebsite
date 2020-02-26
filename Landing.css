@@ -24,7 +24,11 @@ body{
 .content
 {
 	color:white;
-	background-image: linear-gradient(to right, rgb(165, 26, 244), rgba(248, 54, 206,0.7));
+	padding: 3rem;
+	border-radius: 5rem;
+/*	background-image: linear-gradient(to bottom,#000, #ddd, #000);
+*/
+	background-image: linear-gradient(to bottom,rgb(80, 21, 157), rgb(250, 39, 204));
 }
 
 .hi {
@@ -41,8 +45,9 @@ body{
 .top_section
 {
 	color: white;
+	border-radius: 5rem;
 	padding:1rem;
-	background-image: linear-gradient(to right, rgb(165, 26, 244), rgba(248, 54, 206,0.7));
+	background-image: linear-gradient(to bottom, rgb(165, 26, 244), rgba(248, 54, 206,0.7));
 	text-align: center;
 }
 .top_inner
@@ -84,6 +89,7 @@ html, body {
 
 .quotes {
     position: absolute;
+
     bottom: 20px;
     width: 100%;
     left: 0;
@@ -91,10 +97,9 @@ html, body {
 }
 
 .quotes article {
-    border-bottom: 1px dashed #ddd;
+	background-image: linear-gradient(to bottom, #000,#222,#000);
     text-align: justify;
     line-height: 1.8;
-    background: #000;
     max-width: 100%;
     font-size: 14px;
     padding: 80px 40px;
@@ -128,7 +133,7 @@ html, body {
 .contactdet
 {
 	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 2em;
+	font-size: 1em;
 	text-align: center;
 	top: 5rem;
 	left: 3rem;
@@ -138,7 +143,7 @@ html, body {
 .connectext
 {
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 2rem;
+	font-size: 1rem;
 	text-align: center;
 	top: 5rem;
 	left: 3rem;
@@ -147,7 +152,7 @@ html, body {
 .copyright
 {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 3rem;
+	font-size: 2rem;
 	text-align: center;
 		top: 6rem;
 	left: 4rem;
