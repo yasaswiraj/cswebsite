@@ -21,9 +21,17 @@ body{
 	top: 0;
 	width: 100%;
 }
+.content-heading
+{
+	border-radius: 5rem;
+	background-color: black;
+	display:inline-block;
+	padding: 2rem;
+}
 .content
 {
 	color:white;
+	font-family: 'Source Code Pro',monospace;
 	padding: 3rem;
 	border-radius: 5rem;
 /*	background-image: linear-gradient(to bottom,#000, #ddd, #000);
@@ -107,6 +115,7 @@ html, body {
     margin: 0 auto;
     width: 100%;
     color: #333;
+
 }
 .iglogo
 {
