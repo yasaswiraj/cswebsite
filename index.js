@@ -176,7 +176,7 @@
     $.fn.foldscroll.defaults = {
 
         // Perspective to apply to rotating elements
-        perspective: 600,
+        perspective: 400,
 
         // Default shading to apply (null => no shading)
         shading: 'rgba(0,0,0,0.2)',
@@ -188,6 +188,6 @@
 })( jQuery );
 
 $( '.quotes' ).foldscroll({
-  perspective: 900,
+  perspective: 500,
   margin: '220px'
 });
