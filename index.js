@@ -187,9 +187,11 @@
 
 })( jQuery );
 
+
 $( '.quotes' ).foldscroll({
   perspective: 500,
   margin: '220px'
 });
+
 
 function abc(){ document.getElementById('loader').style.display = 'none'; };
