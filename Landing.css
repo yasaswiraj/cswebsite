@@ -30,7 +30,7 @@ body{
 	font-size: 2rem;
 	font-family: 'Press Start 2P', monospace;
 	animation-name: flash;
-	animation-duration: 0.2s;
+	animation-duration: 0.3s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: 2;
 }
@@ -38,7 +38,7 @@ body{
 {
 	display: inline-block;
 	animation-name: flash;
-	animation-duration: 0.2s;
+	animation-duration: 0.3s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: 2;
 	font-size: 2rem;
