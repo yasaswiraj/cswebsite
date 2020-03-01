@@ -12,6 +12,8 @@ img{
      margin-left: auto;
      margin-right: auto;
      width: auto;
+     max-width: 100%;
+     object-fit: cover;
      box-shadow: 2px 2px 0rem 0.1rem #2ff;
 } 
 body{
@@ -31,6 +33,7 @@ body{
 	font-family: 'Press Start 2P', monospace;
 	animation-name: flash;
 	animation-duration: 0.3s;
+	animation-delay: 1s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: 2;
 }
@@ -39,6 +42,7 @@ body{
 	display: inline-block;
 	animation-name: flash;
 	animation-duration: 0.3s;
+	animation-delay: 2s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: 2;
 	font-size: 2rem;
@@ -52,6 +56,10 @@ body{
 	75%{color: cyan;}
 	100%{color:white;}
 }
+.image-box
+{
+	/*dummy class*/
+}
 .sticky
 {
 	position: fixed;
@@ -63,7 +71,7 @@ body{
 	border-radius: 5rem;
 	background-color: black;
 	display:inline-block;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	padding: 2rem;
 	margin-bottom: 3rem;
 }
@@ -76,16 +84,15 @@ body{
 	color:white;
 	
 	font-family: 'Press Start 2P', monospace;
-	padding: 3rem;
+	padding: 1rem;
 	border-radius: 5rem;
 	/*background-image: linear-gradient(to bottom,rgb(80, 21, 157), rgb(250, 39, 204));*/
 	background-color: #000;
 }
 
 .hi{
-	font-size: 25px;
+	font-size: 1.5rem;
 	font-family: 'PT Sans Narrow', sans-serif;
-	padding: 50px;
 	margin:20px;
 	}
 .anchors
