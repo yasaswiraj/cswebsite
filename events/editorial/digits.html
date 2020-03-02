@@ -12,26 +12,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-	.round-button {
-    display:inline-block;
-    width:60px;
-    height:60px;
-    line-height:60px;
-    border: 2px solid #f5f5f5;
-    border-radius: 50%;
-    color:#f5f5f5;
-    text-align:center;
-    text-decoration:none;
-    background: #555777;
-    box-shadow: 0 0 3px gray;
-    font-size:20px;
-    font-weight:bold;
-    margin:30px 30px;
-}
-.round-button:hover {
-	background: #8A2BE2;
-}
-</style>
+		.round-button-left {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: left;
+	}
+	.round-button:hover {
+		background: rgb(255, 255, 255);
+	}
+	.round-button-right {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: right;
+	}
+	</style>
 <style>
 table {
   border-collapse: collapse;
@@ -61,6 +81,16 @@ td {
 
 </style>
 	</head>
+	<ul class="bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 <body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
@@ -78,6 +108,8 @@ td {
 <section id="banner">
 	<div class="content">
 		<header>
+			<a href="square.html" class="round-button-left"><<span></span></a>
+            <a href="multiple adder.html" class="round-button-right">><span></span></a>
 	<h1><font face="Century Schoolbook" color="white">Digits</font></h1>
 <p><font face="Century Schoolbook" color="white">TIME LIMIT = 5 SECS.</font></p>
 </header>
@@ -101,7 +133,6 @@ td {
 		<tr>
 	    	<td><font size="4" color="white">The input is composed of several test cases. The first line has an integer C, representing the number of test cases.The following C lines contain two integers N and M</br>(1 <= N, M <= 100).</font></td>
 			<td><font size="4" color="white">For each input test case of your program, you must print an integer containing the number of digits of the result of the calculated power in the respective test case.</font></td>
-			<a href="square.html" class="round-button"><<span></span></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="multiple adder.html" class="round-button">><span></span></a>
 		</tr>
 	</tbody>
 </table>
@@ -194,7 +225,7 @@ int main()
 </header>
 <ul>
 <li><a href="square.html">#1 Squared and cubic</a></li>
-<li><a href="digits.html">#2 Digits</a></li>
+<li style="color:purple"><a href="digits.html">#2 Digits</a></li>
 <li><a href="multiple adder.html">#3 Multiple Adder</a></li>
 <li><a href="grains.html">#4 Grains in a Chessboard</a></li>
 <li><a href="age in days.html">#5 Age In Days</a></li>
