@@ -1,0 +1,284 @@
+html
+{
+	/*margin-left:0px;*/
+	height: 100%;
+	/*background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));*/
+	background-color: #000;
+	overflow-x: hidden;
+}
+h2{
+			text-align: center;
+}
+.imgs{
+	 display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: auto;
+     max-width: 100%;
+     object-fit: cover;
+     box-shadow: 2px 2px 0rem 0.1rem #2ff;
+} 
+body{
+	display:grid;
+
+}
+.container
+{
+	margin-left: 0px;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00a087;
+}
+.logo
+{
+	box-shadow: 0px 0px 0.5rem 1rem #000;
+	border-radius: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 20px;
+}
+.firstHeading
+{
+	display: inline-block;
+	font-size: 2rem;
+	font-family: 'Press Start 2P', monospace;
+	animation-name: flash;
+	animation-duration: 0.3s;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+}
+.subHeading
+{
+	display: inline-block;
+	animation-name: flash;
+	animation-duration: 0.3s;
+	animation-delay: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+	font-size:150%;
+	font-family: 'Press Start 2P', monospace;
+}
+@keyframes flash
+{
+	0% {color: purple;}
+	25%{color: yellow;}
+	50%{color: #ddd;}
+	75%{color: cyan;}
+	100%{color:white;}
+}
+.image-box
+{
+	/*dummy class*/
+}
+.sticky
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.content-heading
+{
+	border-radius: 5rem;
+	background-color: black;
+	display:inline-block;
+	font-size: 1.5rem;
+	padding: 2rem;
+	margin-bottom: 3rem;
+}
+.content-heading:hover
+{
+	color: cyan;
+}
+.content
+{
+	color:white;
+	
+	font-family: 'Press Start 2P', monospace;
+	padding: 1rem;
+	border-radius: 5rem;
+	/*background-image: linear-gradient(to bottom,rgb(80, 21, 157), rgb(250, 39, 204));*/
+	background-color: #000;
+}
+
+.hi{
+	font-size: 1.5rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin:20px;
+	}
+.anchors
+{
+	text-decoration: none;
+	color:white;
+}
+.top_section
+{
+	color: white;
+	border-radius: 5rem;
+	padding:2rem;
+	/*background-image: linear-gradient(to bottom, rgb(165, 26, 244), rgba(248, 54, 206,0.7));*/
+	background-color: #000;
+	text-align: center;
+}
+.top_inner
+{
+	background-color: black;
+	border-radius: 2rem;
+	margin: 1rem;
+}
+.nav_button
+{
+	border-radius: 3px;
+	border-width: 2px;
+	border-color: black;
+	display: inline-block;
+	padding: 1.5rem;
+	font-family: 'Press Start 2P', monospace;
+	margin: 1.5rem;
+	color:white;
+	background-color: black;
+}
+.nav_button:hover
+{
+	color:white;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.demo
+{ 
+    position: relative;
+    overflow: hidden;
+    transition: all 1000ms cubic-bezier(0.005, 1.650, 1.000, -0.600);
+    transition-timing-function: cubic-bezier(0.005, 1.650, 1.000, -0.600);
+}
+.demo:hover
+{
+    box-shadow: 0px 0px 20px 5px #FFFFFF;
+}
+.show-off
+{
+    position: absolute;
+    top: -180px;
+    left: -600px;
+    transition: 0.5s;
+    transform: rotate(30deg);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0)50%, rgba(255, 255, 255, 0.7)100%);
+}
+.demo:hover .show-off
+{
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+}
+/*-------------------------Fold-Scroll---------------------------------------*/
+
+
+html, body {
+    font-family: Consolas, monospace;
+    background: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.quotes {
+    position: absolute;
+
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+}
+
+.quotes article {
+	/*background-image: linear-gradient(to bottom, #000,#222,#000);*/
+	background-color: #000;
+    text-align: justify;
+    line-height: 1.8;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 80px 40px;
+    opacity: 1;
+    margin: 0 auto;
+    width: 100%;
+    color: #333;
+
+}
+.iglogo
+{
+	display: inline-block;
+	border-radius: 5em;
+	left: 1.5em;
+	top: 1.5em;
+		box-shadow: 0px 0px 0px 0px;
+
+}
+.gmaillogo
+{
+	display: inline-block;
+	border-radius: 5em;
+	left: 1.5em;
+	top: 1.5em;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.gitlogo
+{
+	border-radius: 5em;
+	display: inline-block;
+	left: 1.5em;
+	top: 1.5em;
+		box-shadow: 0px 0px 0px 0px;
+
+}
+.contactdet
+{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	top: 5rem;
+	left: 3rem;
+	color: white;
+}
+.connectext
+{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 10px;
+	text-align: center;
+	top: 5rem;
+	left: 3rem;
+	color: whitesmoke;
+}
+.copyright
+{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	top: 6rem;
+	left: 4rem;
+	color: whitesmoke;
+}
+
+body { background-color: black; }
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+
+
+span { letter-spacing: -10px; }
+
+.loader{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+#loader {width: 100%;height: 100%;top: 0px;left: 0px;position: fixed;display: block; z-index: 99;text-align:left;}
