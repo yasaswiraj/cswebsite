@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color:#000;
 }
 .bos{
     display: flex;
@@ -208,7 +208,7 @@ float: left;
 }
 
 .row{
-  background-color: rgb(65, 63, 63);
+  background-color: #000;
   background-image: linear-gradient(to center,#535353, #272629 );
   display: flex;
   justify-content: space-between;  
