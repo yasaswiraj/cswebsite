@@ -1,34 +1,41 @@
 body
 {
 	height: 100%;
-	background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));
-}
+	background-color: #000;}
 body{
 	display:grid;
 }
-.h1 {font-size: 120px;
+.h1 {
+	display: inline-block;
+	font-size: 120px;
+	border-bottom: 10px grey dashed;
+	text-align: center;
 	padding: 20px;
-	color: rgb(400,0,600);
+	color: white;
 	font-style: italic;
 	 font-family: "Times New Roman", Times, serif;
-	background-color: #001;
+	background-color: #000;
 }
 
 .display-4 h1{
 	background-color: #001;	
 }
+.bg1{
+	background-color: #000;
+	border-bottom : 15px white dotted;
+}
 .head{
 
-	color: rgb(200,20,40);
+	color: aqua;
 	padding-bottom: 20px;
 }
 .cctext{
-	color: rgb(500,0,500);
+	color: violet;
 	font-size: 30px;
 	padding-bottom: 20px;
 }
 .cctext2{
-	color: rgb(400,0,2000);
+	color: violet;
 	font-size: 30px
 }
 img{
@@ -37,3 +44,4 @@ img{
 li{
 	padding: 10px;
 }
+	
