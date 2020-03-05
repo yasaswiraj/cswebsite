@@ -1,7 +1,8 @@
 body{
+   font-family: Consolas, monospace;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color:#000;
 }
 .bos{
     display: flex;
@@ -127,6 +128,7 @@ nav a{
     margin: 0.5em;
   }
   .sent{
+    font-family: 'PT Sans Narrow', monospace;
     position: relative;
     text-align: center;
         padding: 10px;
@@ -208,13 +210,15 @@ float: left;
 }
 
 .row{
-  background-color: rgb(65, 63, 63);
+   font-family: Consolas, monospace; 
+  background-color: #000;
   background-image: linear-gradient(to center,#535353, #272629 );
   display: flex;
   justify-content: space-between;  
 }
 .svg-wrapper {
   position: relative;
+
   padding : 25px;
 	margin: 0 auto;
   width: 520px;  
@@ -231,7 +235,7 @@ float: left;
   fill: rgb(20,20,20);  
 }
 .text {
-  font-family: 'David Libre';
+ font-family: 'Press Start 2P', monospace;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 8px;
