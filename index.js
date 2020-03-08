@@ -193,5 +193,4 @@ $( '.quotes' ).foldscroll({
   margin: '220px'
 });
 
-
 function abc(){ document.getElementById('loader').style.display = 'none'; };
