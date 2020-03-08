@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-	.round-button {
+	.round-button-left {
     display:inline-block;
     width:60px;
     height:60px;
@@ -26,10 +26,30 @@
     box-shadow: 0 0 3px gray;
     font-size:20px;
     font-weight:bold;
-    margin:30px 30px;
+	margin:30px 30px;
+	position: relative;
+	float: left;
 }
 .round-button:hover {
-	background: #8A2BE2;
+	background: rgb(255, 255, 255);
+}
+.round-button-right {
+    display:inline-block;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #555777;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+	margin:30px 30px;
+	position: relative;
+	float: right;
 }
 </style>
 <style>
@@ -60,6 +80,16 @@ td {
 	}
 </style>
 </head>
+<ul class="bubbles">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
 <body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
@@ -76,6 +106,8 @@ td {
 </header>
 <section id="banner">
 	<div class="content">
+		<a href="stay or go.html" class="round-button-left"><<span></span></a>
+		<a href="square.html" class="round-button-right">><span></span></a>
 		<header>
 	<h1><font face="Century Schoolbook" color="white">Cipher</font></h1>
 <p>
@@ -99,7 +131,6 @@ td {
 		<tr>
 	    	<td><font size="4" color="white">The input consists of a string 'S' containing alpha, numeric and symbols, followed by a number '0<=N<=1000'</font> </td>
 			<td><font size="4" color="white">Encrypt and print the resulting string.</font></td>
-			<a href="stay or go.html" class="round-button"><<span></span></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="square.html" class="round-button">><span></span></a>
 		</tr>
 	</tbody>
 </table>
@@ -252,7 +283,7 @@ int main()
 <li><a href="grains.html">#4 Grains in a Chessboard</a></li>
 <li><a href="age in days.html">#5 Age In Days</a></li>
 <li><a href="stay or go.html">#6 Stay or Go</a></li>
-<li><a href="cipher.html">#7 Cipher</a></li>
+<li style="color:purple"><a href="cipher.html">#7 Cipher</a></li>
 </ul>
 </nav>
 <!-- Section -->
