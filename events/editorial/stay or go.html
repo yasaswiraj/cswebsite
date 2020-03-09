@@ -13,26 +13,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-	.round-button {
-    display:inline-block;
-    width:60px;
-    height:60px;
-    line-height:60px;
-    border: 2px solid #f5f5f5;
-    border-radius: 50%;
-    color:#f5f5f5;
-    text-align:center;
-    text-decoration:none;
-    background: #555777;
-    box-shadow: 0 0 3px gray;
-    font-size:20px;
-    font-weight:bold;
-    margin:30px 30px;
-}
-.round-button:hover {
-	background: #8A2BE2;
-}
-</style>
+		.round-button-left {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: left;
+	}
+	.round-button:hover {
+		background: rgb(255, 255, 255);
+	}
+	.round-button-right {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: right;
+	}
+	</style>
 <style>
 table {
   border-collapse: collapse;
@@ -61,6 +81,16 @@ td {
 	}
 </style>
 </head>
+<ul class="bubbles">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
 <body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
@@ -78,6 +108,8 @@ td {
 <section id="banner">
 	<div class="content">
 		<header>
+			<a href="age in days.html" class="round-button-left"><<span></span></a>
+			<a href="cipher.html" class="round-button-right">><span></span></a>
 	<h1><font face="Century Schoolbook" color="white">Stay or Go</font></h1>
 <p>
 	<font face="Century Schoolbook" color="white">TIME LIMIT = 5 SECS.</font>
@@ -100,7 +132,6 @@ td {
 		<tr>
 	    	<td><font size="4" color="white">Line 1: An upper case character string of length 1..6 that is the name of the comet.<br/>Line 2: An upper case character string of length 1..6 that is the name of the group.</font> </td>
 			<td><font size="4" color="white">A single line containing either the word "GO" or the word "STAY".</font></td>
-			<a href="age in days.html" class="round-button"><<span></span></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="cipher.html" class="round-button">><span></span></a>
 		</tr>
 	</tbody>
 </table>
@@ -210,7 +241,7 @@ int main()
 <li><a href="multiple adder.html">#3 Multiple Adder</a></li>
 <li><a href="grains.html">#4 Grains in a Chessboard</a></li>
 <li><a href="age in days.html">#5 Age In Days</a></li>
-<li><a href="stay or go.html">#6 Stay or Go</a></li>
+<li style="color:purple"><a href="stay or go.html">#6 Stay or Go</a></li>
 <li><a href="cipher.html">#7 Cipher</a></li>
 </ul>
 </nav>
