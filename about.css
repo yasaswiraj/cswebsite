@@ -15,7 +15,11 @@ body{
    margin: 0%;
 }
 .imgs{
+<<<<<<< HEAD
+    display: block;
+=======
   display: block;
+>>>>>>> 83d8bc551b1bf5094704bbc25bd9915d0dc9c135
     margin-left: auto;
     margin-right: auto;
     width: auto;

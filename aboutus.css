@@ -4,20 +4,40 @@ body{
    padding: 0;
    background-color:#000;
   }
-  
+  .mainlogo
+{
+  box-shadow: 0px 0px 0.5rem 1rem #000;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin: auto auto;
+  margin-top: 20px;
+  height: 150px;
+  width:150px;
+}
+.temp{
+  margin: 0px 10px;
+}
+.spacer{
+  margin: 0px 10px;
+}
    .sent{
      font-family: 'PT Sans Narrow',sans-serif;
+     font-size: 1.2rem;
+     border:2px solid white;
+     border-top: none;
+     border-bottom: none;
      position: relative;
      text-align: center;
-         padding: 10px;
-         margin: auto;
-         height: auto;
-         max-width: 750px;
-         border-radius: 40px;
-         cursor: pointer;
-         transition: 0.7s;
-         color: #fff;
-       }
+     margin: 0px auto;
+     height: auto;
+     max-width: 750px;
+     border-radius: 40px;
+     cursor: pointer;
+     transition: 0.7s;
+     color: #fff;
+    }
+
        .raise:hover,
        .raise:focus {
          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
@@ -34,9 +54,19 @@ body{
    animation-iteration-count: 2;
    animation-timing-function: ease-in-out;
   }
+
+  @keyframes flash
+{
+  0% {color: purple;}
+  25%{color: yellow;}
+  50%{color: #ddd;}
+  75%{color: cyan;}
+  100%{color:white;}
+}
   .aboutsubtitle{
-     font-family: 'Press Start 2P';
-     font-weight: 500;
+   font-family: 'Press Start 2P';
+   font-weight: 500;
+   text-decoration-style: double;
    border-radius: 1rem;
    text-align: center;
    background-color: #000;
@@ -45,9 +75,22 @@ body{
    padding: 2rem;
    padding-top:5rem;
    margin-bottom: 1.5rem;
+
+   animation-name: flashsub;
+   animation-duration: 0.3s;
+   animation-delay:3s;
+   animation-iteration-count: 2;
+   animation-timing-function: ease-in-out;
+  }
+    @keyframes flashsub
+  {
+  0% {color: purple;}
+  50%{color: #ddd;}
+  100%{color:white;}
   }
   .aboutsubtitle:hover{
-   color: cyan
+   color: #dd00ff;
+
   }
   .project-img{
     margin-left: auto;
@@ -68,7 +111,10 @@ body{
    cursor: pointer;
    transition: 0.4s;
   float: left;
-  padding-left: 10%;
+
+  padding-left: 5%;
+  padding-right: 5%;
+
   }
   .card .card_image {
    width: inherit;
@@ -275,7 +321,29 @@ body{
   .member-profile:hover .hover_img {
   display: block;
   }
-  
+  .content-heading {
+      border-bottom: 4px dotted purple;
+    }
+
+    .codecraft1 {
+      text-align: center;
+      width: 400px;
+    }
+
+    .codecraft1 img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cssoc1 {
+      text-align: center;
+      width: 600px;
+    }
+
+    .cssoc1 img {
+      display: block;
+      margin: 0 auto;
+    }
   #tenure img {max-width: 300px;}
   
 
