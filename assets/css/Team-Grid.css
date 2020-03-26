@@ -1,0 +1,154 @@
+.team-grid {
+  color: #313437;
+  background-color: black;
+}
+
+.team-grid p {
+  font-family: "Press Start 2P";
+  font-size: 80px;
+  color: #7d8285;
+}
+
+.team-grid h2 {
+  font-family: "Press Start 2P";
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: white;
+}
+
+@media (max-width:767px) {
+  .team-grid h2 {
+    text-align: center;
+    font-family: "Press Start 2P";
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.team-grid .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-grid .intro p {
+  margin-bottom: 0;
+}
+
+.team-grid .people {
+  padding: 50px 0;
+}
+
+.team-grid .item {
+  margin-bottom: 30px;
+}
+
+.team-grid .item .box {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.boxx {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-grid .item .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  ckground-color: #e178ff;
+  background-image: linear-gradient(to bottom right, #60ADAD, #e178ff);
+  background-size: cover;
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+.coverr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  ckground-color: #e178ff;
+  background-image: linear-gradient(to bottom right, #60ADAD, #e178ff);
+  background-size: cover;
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+.mates{
+    position: relative;
+    height: auto;
+    width: 20%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+.team-grid .item:hover .cover {
+  opacity: .75;
+}
+.team-grid .item .name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.bk{
+  background-color: white;
+}
+.name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.team-grid .item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #bbd8fb;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.boxx .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #bbd8fb;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.team-grid .social {
+  font-size: 18px;
+}
+
+.team-grid .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.team-grid .social a:hover {
+  opacity: 1;
+}

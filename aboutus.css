@@ -1,0 +1,324 @@
+body{
+    font-family: Consolas, monospace;
+   margin: 0;
+   padding: 0;
+   background-color:#000;
+  }
+  .mainlogo
+{
+  box-shadow: 0px 0px 0.5rem 1rem #000;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin: auto auto;
+  margin-top: 20px;
+  height: 150px;
+  width:150px;
+}
+.temp{
+  margin: 0px 10px;
+}
+.spacer{
+  margin: 0px 10px;
+}
+   .sent{
+     font-family: 'PT Sans Narrow',sans-serif;
+     font-size: 1.2rem;
+     border:2px solid white;
+     border-top: none;
+     border-bottom: none;
+     position: relative;
+     text-align: center;
+     margin: 0px auto;
+     height: auto;
+     max-width: 750px;
+     border-radius: 40px;
+     cursor: pointer;
+     transition: 0.7s;
+     color: #fff;
+    }
+       .raise:hover,
+       .raise:focus {
+         box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+         transform: translateY(-0.25em);
+       }
+  .abouttitle{
+   font-family: 'Press Start 2P';
+   color: #fff;
+   font-size: 1rem;
+   text-align: center;
+   animation-name: flash;
+   animation-duration: 0.3s;
+   animation-delay:2s;
+   animation-iteration-count: 2;
+   animation-timing-function: ease-in-out;
+  }
+  @keyframes flash
+{
+  0% {color: purple;}
+  25%{color: yellow;}
+  50%{color: #ddd;}
+  75%{color: cyan;}
+  100%{color:white;}
+}
+  .aboutsubtitle{
+   font-family: 'Press Start 2P';
+   font-weight: 500;
+   text-decoration-style: double;
+   border-radius: 1rem;
+   text-align: center;
+   background-color: #000;
+   color: #fff;
+   font-size: 1rem;
+   padding: 2rem;
+   padding-top:5rem;
+   margin-bottom: 1.5rem;
+   animation-name: flashsub;
+   animation-duration: 0.3s;
+   animation-delay:3s;
+   animation-iteration-count: 2;
+   animation-timing-function: ease-in-out;
+  }
+    @keyframes flashsub
+  {
+  0% {color: purple;}
+  50%{color: #ddd;}
+  100%{color:white;}
+  }
+  .aboutsubtitle:hover{
+   color: #dd00ff;
+  }
+  .project-img{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 100%;
+    box-shadow: 2px 2px 0rem 0.1rem #2ff;
+  }
+  
+  .card {
+   margin: 30px auto;
+   margin-left: auto;
+   margin-right: auto;
+   width: 300px;
+   height: 300px;  
+   border-radius: 40px;
+   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+   cursor: pointer;
+   transition: 0.4s;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+  .card .card_image {
+   width: inherit;
+   height: inherit;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 40px;
+   object-fit: cover;
+  }
+  .card .card_image img {
+   width: inherit;
+   height: inherit;
+   border-radius: 40px;
+   object-fit: cover;
+  }
+  
+  .card:hover {
+   transform: scale(0.9, 0.9);
+   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+     -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  .car1{
+   text-align: center;
+   padding: 10px;
+   margin: 30px auto;
+  color: #fff; width: 50%;
+   background-color: #000000;
+   border-radius: 10%;
+   transition: 0.7s;
+   display: table;
+   margin:auto;
+  }
+  
+  .row{
+    font-family: Consolas, monospace; 
+   background-color: #000;
+   background-image: linear-gradient(to center,#535353, #272629 );
+   justify-content: space-between;  
+   margin-bottom: 10rem;
+  }
+  .proj-img .img{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+   
+    
+  }
+  .cards-list{
+    font-family: 'Press Start 2P';
+    color:white;
+  }
+  .cards-list a{
+    font-size: medium;
+    padding-left: 100px;
+    animation-delay: 2s;
+    animation: blinkingText 0.2s 2; 
+  }
+  @keyframes blinkingText{
+    0%		{ color: white;}
+    25%		{ color: #1056c0;}
+    75%		{ color: #254878;}
+    100%	{ color: yellow;}
+  }
+  * {
+   box-sizing: border-box;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+     .col-md-3{
+      float: left;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-offset-2 {
+      margin-left: 16%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  .clear {clear: both;}
+  
+  .separator {
+  margin: 0 auto;
+      background: rgba(0, 0, 0, 0.2);
+      width: 30px;
+      height: 5px;
+  }
+  
+  
+  
+  #tenure {
+  padding: 60px 0;
+      background: black;
+      text-align: center;
+  }
+  
+  #tenure p {
+  padding: 20px 0 60px;
+      color: rgba(255,255,255, 0.85);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+  }
+  
+  #tenure h1 {
+    font-family: 'Press Start 2P';
+    color: aqua;
+    font-size: 1.5rem;
+    text-align: center;
+    animation-name: flash;
+    animation-duration: 0.3s;
+    animation-delay:2s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+  }
+  
+  
+  #tenure h4  {
+  margin-top: -18px;
+  font-size: 22px;
+  font-weight: 700;
+  }
+  
+  #tenure h4 span {
+  display: block;
+      position: relative;
+      left: -40px;
+      top: 5px;
+      font-size: 20px;
+      background: none;
+    padding: 0;
+    color: #fff;
+  }
+  
+  #tenure img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 50%;
+  border: 15px solid transparent;
+  box-shadow: 2px 2px 0px rgb(255,0,255);
+  }
+  
+  #tenure img:hover {
+  border: 15px solid rgb(255,0,255);
+  position: relative;
+  z-index: 10;
+  transition: all 0.1s ease-in;
+  
+  background: rgb(255,0,255);
+  }
+  
+  #tenure span {
+  
+  padding: 8px 20px;
+  position: relative;
+  top: -64px;
+  left: -42px;
+  display: inline-block;
+  background: rgb(255,0,255);
+  border-radius: 0 16px 16px 0;
+  font-size: 16px;
+  }
+  
+  .hover_img {
+  display: none
+  }
+  
+  .member-profile:hover .unhover_img{
+  display: none;
+  }
+  
+  .member-profile:hover .hover_img {
+  display: block;
+  }
+  
+  #tenure img {max-width: 300px;}
+  
+
+  
+  
+  
