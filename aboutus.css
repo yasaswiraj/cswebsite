@@ -4,6 +4,37 @@ body{
    padding: 0;
    background-color:#000;
   }
+
+
+.spacer
+{
+  margin: 4px;
+}
+
+
+  .content-heading {
+      border-bottom: 4px dotted purple;
+    }
+
+    .codecraft1 {
+      text-align: center;
+     
+    }
+
+    .codecraft1 img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cssoc1 {
+      text-align: center;
+      
+    }
+
+    .cssoc1 img {
+      display: block;
+      margin: 0 auto;
+    }
   .mainlogo
 {
   box-shadow: 0px 0px 0.5rem 1rem #000;
@@ -321,29 +352,7 @@ body{
   .member-profile:hover .hover_img {
   display: block;
   }
-  .content-heading {
-      border-bottom: 4px dotted purple;
-    }
-
-    .codecraft1 {
-      text-align: center;
-      width: 400px;
-    }
-
-    .codecraft1 img {
-      display: block;
-      margin: 0 auto;
-    }
-
-    .cssoc1 {
-      text-align: center;
-      width: 600px;
-    }
-
-    .cssoc1 img {
-      display: block;
-      margin: 0 auto;
-    }
+  
   #tenure img {max-width: 300px;}
   
 
