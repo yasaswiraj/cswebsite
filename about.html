@@ -2,88 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <script src="https://kit.fontawesome.com/30baf305ad.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" type="text/css" href="./Landing.css">
+    <link rel="stylesheet" href="aboutus.css">
     <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
     <title>About Us</title>
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark  bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" style="font-family: 'Press Start 2P'; margin-top: 20px;">coding.Studio();</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end " id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto" style="font-family: 'Press Start 2P';">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="category.html">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Editorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#EVENTS">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <body data-rsssl=1>
+    <style>
+      .event1left
+      {
+        position:relative;
+        float: left;
+      }
+      .event1right
+      {
+        position: relative;
+        float: right;
+      }
+      .container {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      background-color: #000;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+}
+      .mainlogo
+      {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      header {
+          height: 100%;
+          width: 100%;
+          float: left;
+          background: rgb(94, 103, 105);
+          padding: 0 20px;
+          color: #fff;
+      }
+      .brand-logo {
+          max-width: 75px;
+          float: left;
+          padding: 14px 0px;
+          color: white;
+      }
+      .navigation {
+          margin: 0px;
+          float: right;
+      }
+      .navigation li {
+          list-style: none;
+          float: left;
+      }
+      .navigation li a {
+          color: #fff;
+          padding: 28px 15px;
+          text-transform: uppercase;
+          text-align: center;
+          display: block;
+          text-decoration: none;
+      }
+      .navigation li a i {
+          width: 100%;
+          font-size: 20px;
+          margin-bottom: 7px;
+      }
+      .show-menu-btn,
+      .hide-menu-btn {
+          transition: 0.4s;
+          font-size: 30px;
+          cursor: pointer;
+          display: none;
+      }
+      .show-menu-btn {
+          margin: 0px;
+          float: right;
+      }
+      .show-menu-btn i {
+          line-height: 100px;
+      }
+      .navigation a:hover,
+      .show-menu-btn:hover,
+      .hide-menu-btn:hover {
+          color: #f700ff;
+      }
+      #toggle-btn {
+          position: absolute;
+          visibility: hidden;
+          z-index: -1111;
+      }
+      </style>    
+    <header>
+        <div class="brand-logo">
+            <a><h2>Coding.studio();<h2></a>
         </div>
-    </nav>
-    <div style="height: 50px;"></div>
-    <img src="./white_png.png" class="mainlogo"/>
+  
+        <input type="checkbox" id="toggle-btn">
+        <label for="toggle-btn" class="show-menu-btn"><i class="fas fa-bars"></i></label>
+  
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+  </body>
+  <div class="mainlogo">  
+  <img src="./white_png.png" class="mainlogo">
+  </div>
+  <br/><br/><br/><br/><br/>
     <div class="abouttitle">
-      <h1>/* What is cS(); */</h1>
+      <h1>/* What is cs(); */</h1>
     </div>
     <div class="aboutsubtitle">
-      <h2> <<     History of cs();     >></h2>
+      <h2>History of cs(); </h2>
     </div>
-    <div class="spacer">
     <div class="justify-content-md-center sent">
-        <p class="temp">coding.Studio(); is the official programming club of VBIT established in 2018 with the aim of inculcating a programming culture in VBIT.<br/><br/></p>
+        <p><h2>coding.Studio(); is the official programming club of VBIT established in 2018 with the aim of inculcating programming culture in VBIT.<br/><br/>
 
-        <p class="temp">
-            It is the only forum which functions 24x7, in the quest of knowledge and for the love of computer science!<br/><br/></p>
-        <p class="temp">
-            Our work includes open source GitHub projects, conducting workshops on various technologies and the occasional programming competitions.<br/></p>
+            It is the only forum which functions 24x7 in the quest of knowledge and for the love of Computer sceince!<br/><br/>
+            
+            Our works include open source Git-hub projects, conducting workshops on various technologies and the occasional programming competetions.<br/></h2></p>
     </div>
-    </div>
+
     <div class="aboutsubtitle">
       <h2>Projects </h2>
     </div>
 
     
     <div class="cards-list">
-      <!-- <h3><a>#1 VBIT Market Place</a></h3> -->
-      <p style="padding-left: 100px;font-family: 'Press Start 2P'">#1 VBIT Market Place</p>
-
+      <h3> <a>#1 VBIT Market Place</a></h3>
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 card 1">
           <div class="card_image"> <img src="img/marketplace.png" /> </div>
         </div>
         <div class="col-md-6 col-lg-8 car1">
-
-          <p><h2> It’s a marketplace where people can buy, sell and rent goods of common use like calculators, textbooks and drafters.<br/><br/> It’s a subsidized marketplace to make use of the goods no longer needed by certain students so that no resource goes to waste.</h2>
-            <br/><br/>
+          <p><h2> It’s a marketplace where people can buy, sell and rent goods of common use like calculators, textbooks and drafters.<br/><br/> It’s a subsidized marketplace to make use of the goods no longer needed by certain students so that no resource goes to waste. 
+            .<br/><br/>
              </div>
     </div>
-    <!-- <h3> <a>#2 VBITQ</a></h3>   -->
-    <p style="padding-left: 100px;font-family: 'Press Start 2P'">#2 VBITQ</p>
-
+    <h3> <a>#2 VBITQ</a></h3>  
         <div class="row">
           <div class="card 2">
           <div class="card_image">
@@ -98,9 +175,7 @@
             <br/></h2></p>
       </div>
       </div>
-
-      <!-- <h3><a>#3 Study Map</a></h3> -->
-      <p style="padding-left: 100px;font-family: 'Press Start 2P'">#3 Study Map</p>
+      <h3><a>#3 Study Map</a></h3>
 
       <div class="row">
         <div class="card 3">
@@ -127,38 +202,17 @@
         <!--This is the top section of the page -->
         <div class="top_inner">
 
-          <p class="firstHeading" style="display: block;" id="pp"> /* Events */</p>
-          <p class="subHeading" style="color: violet;"><a style="color: aqua;">#include</a> &ltfun.h&gt</p>
+
+
+        <div class="aboutsubtitle">
+          <h2> /* Events */ </h2>
         </div>
-      </div>
-    </article>
-    <!--This is the middle section of the page-->
-    <article>
-      <div class="content" style="padding:0px;">
-        <h2 class="content-heading">2019</h2>
-      </div>
-    </article>
-    <article>
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <a href="events/codecraft/cc.html">
-                <div class="codecraft1" style="padding-right: 80px;">
-                  <img src="events/codeCraftPoster.jpg" width="400px" height="500px">
-                  <p style="color: white;">codeCraft</p>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="events/cssoc/cc.html">
-                <div class="cssoc1" style="padding-left: 80px;">
-                  <img src="events/img2.png" width="600px" height="400px">
-                  <p style="color: white;">CSSOC</p>
-                </div>
-              </a>
-            </div>
+        <section id="tenure">
+          <h1>#include <a style="color:violet">&ltfun.h&gt</a></h1>
+          <div class="aboutsubtitle">
+            <h2 class="content-heading">2019</h2>
           </div>
+
         </div>
       </div>
     </article>
@@ -166,6 +220,8 @@
 
          <div class="aboutsubtitle">
         <p style="font-size: 1.2rem;margin: 1px;">Team codingStudio();</p>
+
+
         </div>
         <section id="tenure">
           <h1>int <a style="color:violet">Tenure1 [12]</a></h1>
@@ -195,7 +251,7 @@
               <div class="col-md-3">
                 <a  class="member-profile">
                         <div class="unhover_img">
-                        <img src="img/sanath.jpg" alt="" />
+                        <img src="img/cslogo.png" alt="" />
                         </div>
                         <div class="hover_img">
                         <img src="img/magenta1.png" alt="" />
