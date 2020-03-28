@@ -10,11 +10,7 @@
   margin-bottom: 2%;
 }
 .sih{
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 65%;
->>>>>>> ac493a1012b2090835d2df9ec098fd3b80d8c8ba
   border-radius: 25px;
   text-align: center;
 }
@@ -63,7 +59,7 @@
 }
 .t3{
   background-color: grey;
-  width: 70%;
+  width: 90%;
   margin-left: 15%;
   text-align: center;
   color: black;
