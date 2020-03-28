@@ -1,0 +1,83 @@
+.headingg{
+  width: 100%;
+  float: left;
+}
+
+.pic{
+  width: 8%;
+  text-align: center;
+  border-bottom: thin solid #b007c4;
+  margin-bottom: 2%;
+}
+.sih{
+  width: 45%;
+  border-radius: 25px;
+  text-align: center;
+}
+.t{
+  text-align: center;
+  color: white;
+  border-bottom: thin solid white;
+  font-family: "Press Start 2P";
+  padding: 2%;
+  margin-bottom: 2%;
+}
+.row{
+  margin-bottom: 5%;
+}
+.t1{
+  margin-bottom: 2%;
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P";
+  border: solid #b007c4;
+  padding: 20%;
+  border-radius: 20px;
+}
+.t1-1{
+  color: white;
+  font-size: 85%;
+  font-family: "Press Start 2P";
+  margin-bottom: 3%;
+}
+.t1-2{
+  margin-top: 3%;
+  color: white;
+  font-size: 30%;
+  font-family: "Press Start 2P";
+}
+.t2{
+  background-color: grey;
+  backgro
+  text-align: left;
+  color: black;
+  font-size: 80%;
+  border-radius: 25px;
+  border: solid black;
+  padding: 8.5%;
+  font-family: "Press Start 2P";
+}
+.t3{
+  background-color: grey;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  color: black;
+  font-size: 80%;
+  border-radius: 25px;
+  padding: 1%;
+}
+.inside-text{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+hr{
+  color: white;
+}
+body{
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 90%;
+  background-image: url("dark.png");
+}
