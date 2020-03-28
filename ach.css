@@ -67,6 +67,18 @@
   padding: 20%;
   border-radius: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .t3{
+    margin-bottom: 2%;
+    margin-top: 0%;
+    text-align: center;
+    color: white;
+    font-family: "Press Start 2P";
+    border: solid #b007c4;
+    padding: 20%;
+    border-radius: 20px;
+  }
+}
 .t4{
   background-color: grey;
   width: 90%;
