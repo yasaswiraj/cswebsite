@@ -5,6 +5,7 @@ html
 	/*background-image: linear-gradient(to right, rgb(165, 26, 244), rgb(248, 54, 206));*/
 	background-color: #000;
 	overflow-x: hidden;
+	background-color: black;
 }
 h2{
 			text-align: center;
@@ -20,6 +21,8 @@ h2{
 } 
 body{
 	display:grid;
+	background-color: black;
+	overflow-x: hidden;
 
 }
 .container
