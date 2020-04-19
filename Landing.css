@@ -25,6 +25,9 @@ body{
 	overflow-x: hidden;
 
 }
+section{
+	overflow-x: hidden;
+}
 .container
 {
 	margin-left: 0px;
