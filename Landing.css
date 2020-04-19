@@ -6,9 +6,24 @@ html
 	background-color: #000;
 	overflow-x: hidden;
 	background-color: black;
+
 }
+
 h2{
 			text-align: center;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #000;
 }
 .imgs{
 	 display: block;
