@@ -59,7 +59,8 @@
 
             // Prepare container
             $this.css( prefix({ 'backface-visibility': 'hidden' }));
-            $this.css({ overflow: 'scroll' });
+            // $this.css({ overflow: 'scroll' }); ----THIS LINE HAS BEEN INTENTIONALLY REMOVED DO NOT UNDERANY CIRCUMSTANCES UNCOMMENT THIS LINE OR TWO PUPPIES WILL DIE EVERY SECOND.
+
 
             $this.on( 'scroll', function() {
                 // Store scroll amount
@@ -148,7 +149,6 @@
                     $item.css( 'visibility', show ? 'visible' : 'hidden' );
                 });
             });
-
             // Set initial state
             $this.trigger( 'scroll' );
         });
@@ -176,7 +176,7 @@
     $.fn.foldscroll.defaults = {
 
         // Perspective to apply to rotating elements
-        perspective: 600,
+        perspective: 400,
 
         // Default shading to apply (null => no shading)
         shading: 'rgba(0,0,0,0.2)',
@@ -187,7 +187,11 @@
 
 })( jQuery );
 
+
 $( '.quotes' ).foldscroll({
-  perspective: 900,
+  perspective: 500,
   margin: '220px'
 });
+
+
+function abc(){ document.getElementById('loader').style.display = 'none'; };

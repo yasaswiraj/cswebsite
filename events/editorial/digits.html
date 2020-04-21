@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digits</title>
+	<link rel="stylesheet" href="assetes/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<link rel="shortcut icon" href="white_png.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		.round-button-left {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: left;
+	}
+	.round-button:hover {
+		background: rgb(255, 255, 255);
+	}
+	.round-button-right {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: right;
+	}
+	</style>
+<style>
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+td {
+  height: 50px;
+  vertical-align:top;
+  padding-left: 8px;
+}
+</style>
+<style type="text/css" media="screen">
+		#parent {
+			width: 70%;
+			height: 600px;
+			display: inline-block;
+			position: absolute;
+		}
+
+		#editor {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+</style>
+	</head>
+	<ul class="bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Main -->
+<div id="main">
+<div class="inner">
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo">CodeCraft</a>
+<ul class="icons">
+<li><a href="https://github.com/orgs/coding-Studio-vbit" class="icon brands fa-github"><span class="label">Github</span></a></li>
+<li><a href="https://www.instagram.com/coding.studio/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+</ul>
+</header>
+<section id="banner">
+	<div class="content">
+		<header>
+			<a href="square.html" class="round-button-left"><<span></span></a>
+            <a href="multiple adder.html" class="round-button-right">><span></span></a>
+	<h1><font face="Century Schoolbook" color="white">Digits</font></h1>
+<p><font face="Century Schoolbook" color="white">TIME LIMIT = 5 SECS.</font></p>
+</header>
+<div class="problem">
+<ul>
+<li><font size="4" color="white">Given two integers, n and m, how many digits does n^m have?<br/><br/>
+<u><b><font color="white">Examples:</font><br/></b></u><br/>
+2 and 10 - 2^10 = 1024 => 4 digits<br/>
+3 and 9 - 3^9 = 19683 => 5 digits
+</font></li>
+</ul>
+</div>
+	<table>
+		<thead>
+			<tr>
+				<u><b><td><font size="5" color="white">Input</font></td></b></u>
+				<u><b><td><font size="5" color="white">Output</font></td></b></u>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+	    	<td><font size="4" color="white">The input is composed of several test cases. The first line has an integer C, representing the number of test cases.The following C lines contain two integers N and M</br>(1 <= N, M <= 100).</font></td>
+			<td><font size="4" color="white">For each input test case of your program, you must print an integer containing the number of digits of the result of the calculated power in the respective test case.</font></td>
+		</tr>
+	</tbody>
+</table>
+<br/>
+	<fieldset style="width:50%">
+	<legend>
+		<b><td><font color="white" size ="5">Example Test Case</font></td></b>
+	</legend>
+	<table>
+			<thead>
+			<tr>
+			<b><td><font size="4" color="white">Input</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td></b>
+	        <b><td><font size="4" color="white">Output</font></td></b>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><font color="white">4<br/>1 1<br/>2 10<br/>3 9<br/>100 100</font></td>
+		<td><font color="white">1<br/>4<br/>5<br/>201</font></td>
+	</tr>
+	</tbody>
+</table>
+	</fieldset>
+	<fieldset style="width:40%">
+		<legend>
+			<u>
+				<b>
+					<font size="4" color="white">Solution</font>
+				</b>
+			</u>
+			<br><br>
+			<button onclick="myFunction()">View</button>
+		</legend>
+		<table>
+			<tbody>
+				<div id="parent">
+<!-- Solution in C -->
+<div id="editor">#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+int main()
+{
+	long long int n, m, temp, d = 0;
+
+	/*
+		long long int is used because of the input constraints.
+	 	'n' = base
+	 	'm' = index
+	 	'temp' = temporary values
+	 	'd' = number of digits respectively. 
+	*/
+	
+	// Accept the base and the index
+	scanf("%lld %lld", & n, & m); 
+
+	// Calculate n^m
+	temp = pow(n, m);
+	
+	//As long as the value of temp does not become equal to zero, keep running the loop.
+	while (temp != 0) 
+	{
+		//Keep dividing n^m by 10
+		temp /= 10; 
+
+		//And increment the counter variable 'd' to count the digits.
+		d++; 
+	}
+	
+	//Print the number of digits.
+	printf("%lld", d);
+	
+	return 0;
+}
+</div>
+				</div>
+<script>
+	document.getElementById("editor").style.display = "none";
+</script>
+			</tbody>
+		</table>
+		</fieldset>
+	</section>	
+</div>
+</div>
+<!-- Sidebar -->
+<div id="sidebar">
+<div class="inner">
+<!-- Menu -->
+<nav id="menu">
+<header class="major">
+</header>
+<ul>
+<li><a href="square.html">#1 Squared and cubic</a></li>
+<li style="color:purple"><a href="digits.html">#2 Digits</a></li>
+<li><a href="multiple adder.html">#3 Multiple Adder</a></li>
+<li><a href="grains.html">#4 Grains in a Chessboard</a></li>
+<li><a href="age in days.html">#5 Age In Days</a></li>
+<li><a href="stay or go.html">#6 Stay or Go</a></li>
+<li><a href="cipher.html">#7 Cipher</a></li>
+</ul>
+</nav>
+<section>
+<header class="major">
+<h2>Get in touch</h2>
+</header>
+<ul class="contact">
+<li class="icon solid fa-envelope"><a href="#">codingStudio@gmail.com</a></li>
+<li class="icon solid fa-phone">+91 8179602969</li>
+<li class="icon solid fa-home">Vignana Bharthi Instute of Technology<br />
+Aushapur, Ghatkesar, Hyderabad, Telengana - India</li>
+</ul>
+</section>
+<!-- Footer -->
+<footer id="footer">
+<p class="copyright">&copy; coding.Studio();</p>
+</footer>
+</div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
