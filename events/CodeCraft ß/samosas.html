@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Squared and Cubic</title>
-<link rel="stylesheet" href="assetes/css/style.css" />
+<title>Samosas</title>
+<link rel="stylesheet" href="assets/css/styles.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript"
 		charset="utf-8"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -98,7 +98,7 @@ td {
 <div class="inner">
 <!-- Header -->
 <header id="header">
-<a href="index.html" class="logo">CodeCraft</a>
+<a href="index.html" class="logo">CodeCraftβ</a>
 <ul class="icons">
 <li><a href="https://github.com/orgs/coding-Studio-vbit" class="icon brands fa-github"><span class="label">Github</span></a></li>
 <li><a href="https://www.instagram.com/coding.studio/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -107,16 +107,16 @@ td {
 <section id="banner">
 	<div class="content">
 		<header>
-			<a href="cipher.html" class="round-button-left"><<span></span></a>
-            <a href="digits.html" class="round-button-right">><span></span></a>
-<h1><font face="Century Schoolbook" color="white">Squared and Cubic</font></h1>
+			<a href="spacious maximus.html" class="round-button-left"><<span></span></a>
+            <a href="reasonably sound.html" class="round-button-right">><span></span></a>
+<h1><font face="Century Schoolbook" color="white">Samosas</font></h1>
 <p>
-	<font face="Century Schoolbook" color="white">TIME LIMIT = 5 SECS.</font>
+	<font face="Century Schoolbook" color="white">TIME LIMIT = 1 SEC.</font>
 </p>
 </header>
 <div class="problem">
 <ul>
-<li><font size="4" color="white">Write a program that reads an integer N (1 < N < 1000). This N is the number of output lines printed by this program.</font></li>
+<li><font size="4" color="white">Who doesn't love those hot, delicious samosas in the canteen every evening? The majority of the rush near the counter is only due to those samosas. Hundreds of samosas vanish in less than five minutes. Due to this, it becomes hard for the canteen people to keep track of how many samosas they sell each day. They're now asking for your help to deal with this issue.<br/>Given the number of samosas they sell each day in a week, print their week's average</font></li>
 </ul>
 </div>
 	<table>
@@ -128,12 +128,12 @@ td {
 	</thead>
 	<tbody>
 		<tr>
-	<td  ><font size="4" color="white" >The input file contains an integer N</font></td>
-			<td  ><font size="4" color="white">Print the output according to the given example.</font></td>
+	<td  ><font size="4" color="white" >Six lines containing the number of samosas sold on each day.</font></td>
+	<td  ><font size="4" color="white">Print the average number of samosas sold that week, accurate to two decimal places.</font></td>
 		</tr>
-
 </table>
-
+<b><font size="5" color="white">Constraints</font></b>
+  <ul><li><font size="4" color="white">1 ≤ Number of samosas sold each day ≤ 10<sup>9</sup></font></li></ul>
 	<fieldset style="width:50%">
 	<legend>
 		<b><td><font color="white" size ="5">Example Test Case</font></td></b>
@@ -141,7 +141,7 @@ td {
 	<table>
 			<thead>
 			<tr>
-			<b><td><font size="4" color="white">Input</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td></b>
+			<b><td><font size="4" color="white">Input</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td></b>
 	        <b><td><font size="4" color="white">Output</font></td></b>
 		</tr>
 
@@ -149,8 +149,8 @@ td {
 	</thead>
 	<tbody>
 		<tr>
-		<td><font color="white">5</font></td>
-		<td><font color="white">1 1 1<br/>2 4 8<br/>3 9 27<br/>4 16 24<br/>5 25 125<br/></font></td>
+		<td><font color="white">100<br/>200<br/>100<br/>300<br/>400<br/>500</font></td>
+		<td><font color="white">266.67</font></td>
 	</tr>
 	</tbody>
 </table>
@@ -168,27 +168,20 @@ td {
 		<table>
 			<tbody>
 				<div id="parent">
-<!-- Solution in C -->
-<div id="editor">#include &lt;stdio.h&gt;
+<!-- Solution in C++ -->
+<div id="editor">#include &lt;cstdio&gt;
 int main()
 {
-   int n, i;
-
-	/*
-		'N' is the number up to which the squares and cubes are to be
-		printed. 
-	  	'i' is the looping variable. 
-	*/
-   
-	scanf("%d", & n); //Accept 'n'
-	for (i = 1; i <= n; i++)
-   	{
-		//Loop and print the squares and cubes of every number up to N separated by a new line.
-
-		printf("%d %d %d\n", i, i * i, i * i * i); 
-	}
-	   
-	return 0;
+    long long int quantity[6],i; //there are only six days
+    							 // quantity can be large (upto 10^9) hence using long long
+    double sum=0;	//sum can be large so using double
+    for(i=0;i<6;i++)
+    {
+        scanf("%lld",&quantity[i]);
+        sum += quantity[i];
+    }
+    printf("%.2lf",sum/6.0); //printing upto 2 decimal places using .2lf (for double)
+    return 0;
 }
 </div>
 				</div>
@@ -209,13 +202,22 @@ int main()
 <header class="major">
 </header>
 <ul>
-<li style="color:purple"><a href="square.html">#1 Squared and cubic</a></li>
-<li><a href="digits.html">#2 Digits</a></li>
-<li><a href="multiple adder.html">#3 Multiple Adder</a></li>
-<li><a href="grains.html">#4 Grains in a Chessboard</a></li>
-<li><a href="age in days.html">#5 Age In Days</a></li>
-<li><a href="stay or go.html">#6 Stay or Go</a></li>
-<li><a href="cipher.html">#7 Cipher</a></li>
+<li><a href="thieves.html">#1 Thieves</a></li>
+<li><a href="the Queue of doubts.html">#2 The Queue of Doubts</a></li>
+<li><a href="summation of primes.html">#3 Summation of Primes</a></li>
+<li><a href="spacious maximus.html">#4 Spacious Maximus</a></li>
+<li style="color:purple"><a href="samosas.html">#5 Samosas</a></li>
+<li><a href="reasonably sound.html">#6 Reasonably Sound</a></li>
+<li><a href="product of digits.html">#7 Product of Digits</a></li>
+<li><a href="prime usernames.html">#8 Prime Usernames</a></li>
+<li><a href="path shifter.html">#9 Path Shifter </a></li>
+<li><a href="keypad count.html">#10 Keypad Count</a></li>
+<li><a href="even vowels.html">#11 Even Vowels</a></li>
+<li><a href="encryption.html">#12 Encryption</a></li>
+<li><a href="Decryption.html">#13 Decryption</a></li>
+<li><a href="canteen accountant.html">#14 Canteen Accountant</a></li>
+<li><a href="attendance register.html">#15 Attendance Register</a></li>
+<li><a href="amazing year.html">#16 Amazing Year</a></li>
 </ul>
 </nav>
 
@@ -225,8 +227,8 @@ int main()
 <h2>Get in touch</h2>
 </header>
 <ul class="contact">
-<li class="icon solid fa-envelope"><a href="mailto:executives@codingstudio.club">executives@codingstudio.club</a></li>
-<li class="icon solid fa-phone"><a href="tel:+918179602969">+91 81796 02969</a></li>
+<li class="icon solid fa-envelope"><a href="#">executives@codingstudio.club</a></li>
+<li class="icon solid fa-phone">+91 8179602969</li>
 <li class="icon solid fa-home">Vignana Bharthi Instute of Technology<br />
 Aushapur, Ghatkesar, Hyderabad, Telengana - India</li>
 </ul>
