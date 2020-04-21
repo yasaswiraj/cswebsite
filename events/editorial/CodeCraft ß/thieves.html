@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Decryption</title>
+<title>Thieves</title>
 <link rel="stylesheet" href="assets/css/styles.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript"
 		charset="utf-8"></script>
@@ -98,7 +98,7 @@ td {
 <div class="inner">
 <!-- Header -->
 <header id="header">
-<a href="index.html" class="logo">CodeCraftβ</a>
+<a href="index.html" class="logo">codeCraft β</a>
 <ul class="icons">
 <li><a href="https://github.com/orgs/coding-Studio-vbit" class="icon brands fa-github"><span class="label">Github</span></a></li>
 <li><a href="https://www.instagram.com/coding.studio/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -107,16 +107,16 @@ td {
 <section id="banner">
 	<div class="content">
 		<header>
-			<a href="encryption.html" class="round-button-left"><<span></span></a>
-            <a href="canteen accountant.html" class="round-button-right">><span></span></a>
-<h1><font face="Century Schoolbook" color="white">Decryption</font></h1>
+			<a href="amazing year.html" class="round-button-left"><<span></span></a>
+            <a href="the Queue of doubts.html" class="round-button-right">><span></span></a>
+<h1><font face="Century Schoolbook" color="white">Thieves</font></h1>
 <p>
 	<font face="Century Schoolbook" color="white">TIME LIMIT = 1 SEC.</font>
 </p>
 </header>
 <div class="problem">
 <ul>
-<li><font size="4" color="white">All sensitive messages in this world are encrypted. This is nothing new. Encryption has been an important part of communication since the times of Julius Caesar. Let's try to crack a simple encrypted message. Lucky for us, C.H.R.I.S. has told us the encryption algorithm. It's pretty simple: It is the letter followed by the number of times that letter occurs.</font></li>
+<li><font size="4" color="white">Every evening, hundreds of students gather up at canteen and buy various snacks. Many of these students prefer to pay through E-Wallets and UPI methods such as PayTM, PhonePe and Google Pay etc.<br/>Due to the rush, the owner can't keep track of all payments and verify if a student has actually made the payment or not. But the canteen owner has visual memory i.e. he can remember a few digits of phone numbers after looking at it just once. The digits that he can't remember, he marks them with the symbol '%'.<br/>Ex. For a phone number 1234567890, he may remember it as 1234%67%9%.<br/>Now, it is your job to find out whether a given set of students have made the payment or not.</font></li>
 </ul>
 </div>
 	<table>
@@ -128,12 +128,13 @@ td {
 	</thead>
 	<tbody>
 		<tr>
-	<td  ><font size="4" color="white" >First line will contain L - the number of characters in the encrypted message.<br/>The second line will contain the encrypted message itself.</font></td>
-			<td  ><font size="4" color="white">For each testcase, output the decrypted message.</font></td>
+	<td  ><font size="4" color="white" >First line will contain N, number of students. Then the N phone numbers will follow.<br/>Each of the next N lines consists of two ten digit numbers: the number that the canteen owner remembers and the corresponding actual number.</font></td>
+	<td  ><font size="4" color="white">Print two space-separated integers - the number of students who made the payment and the number of students who did not.</font></td>
 		</tr>
 </table>
 <b><font size="5" color="white">Constraints</font></b>
-  <ul><li><font size="4" color="white">1 ≤ L ≤ 1000</font></li></ul>
+  <ul><li><font size="4" color="white">1 ≤ T ≤ 100</font></li>
+  	<li><font size="4" color="white">Maximum number of digits per phone number in each test case = 10</font></li></ul>
 	<fieldset style="width:50%">
 	<legend>
 		<b><td><font color="white" size ="5">Example Test Case</font></td></b>
@@ -149,8 +150,8 @@ td {
 	</thead>
 	<tbody>
 		<tr>
-		<td><font color="white">6<br/>a1b2c3</font></td>
-		<td><font color="white">abbccc</font></td>
+		<td><font color="white">3<br/>1234%67%9% 1234567890<br/>349%%%%810 3497831233<br/>56%%172273 5612172273</font></td>
+		<td><font color="white">2&nbsp&nbsp1</font></td>
 	</tr>
 	</tbody>
 </table>
@@ -168,42 +169,33 @@ td {
 		<table>
 			<tbody>
 				<div id="parent">
-<!-- Solution in C -->
+<!-- Solution in C++ -->
 <div id="editor">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;cctype&gt;
+#include &lt;string&gt;	
 using namespace std;
 int main()
- {
-     int n,i,t,j,last_char;
-     string temp;
-     cin>>n; //take n
-     string ip;
-     cin>>ip; //take the encrypted text
-     for(i=0;i&lt;n;i++)
-     {
-         if(isalpha(ip[i])) //if current character is alphabet, set last_char to index of that alphabet
-            last_char=i;
-         else if(isdigit(ip[i])) //if is digit, make a number from all the digits starting from that digit
-         {
-            //first collect all the digits and make a string number
-             j=i; 
-             while(isdigit(ip[j]))
-             {
-                 temp += ip[j];
-                 j++;
-             }
-             i=j-1;
-             //convert that string number to an actual number.
-             j = stoi(temp);
-             //print the last character j number of times.
-             while(j--)
-                cout&lt;&lt;ip[last_char];
-            temp.clear(); //clear that temp string number.
-         }
-     }
-     return 0;
- }
+{
+    int n, i, j, c = 0; //c denotes the number of mismatched pairs of phone numbers.
+    cin >> n; //take in number of numbers.
+    string ip[n][2];//there are n pairs of phone numbers.
+
+    for (i = 0; i < n; i++) ///take in all the pairs of phone numbers
+        cin >> ip[i][0] >> ip[i][1];
+     for (i = 0; i < n; i++) //checking each pair.
+    {
+        for (j = 0; j < 10; j++) //checking corresponding characters in the phone numbers.
+        {
+            if (ip[i][0][j] != ip[i][1][j] && ip[i][0][j] != '%') 
+            {
+                //if the digit is known and it is not equal then the numbers do not match.
+                c++;
+                break;
+            }
+        }
+    }
+    cout << n - c << " " << c;  // n-c gives the matching pairs of phone numbers
+    return 0;
+}
 </div>
 				</div>
 <script>
@@ -223,7 +215,7 @@ int main()
 <header class="major">
 </header>
 <ul>
-<li><a href="thieves.html">#1 Thieves</a></li>
+<li style="color:purple"><a href="thieves.html">#1 Thieves</a></li>
 <li><a href="the Queue of doubts.html">#2 The Queue of Doubts</a></li>
 <li><a href="summation of primes.html">#3 Summation of Primes</a></li>
 <li><a href="spacious maximus.html">#4 Spacious Maximus</a></li>
@@ -235,7 +227,7 @@ int main()
 <li><a href="keypad count.html">#10 Keypad Count</a></li>
 <li><a href="even vowels.html">#11 Even Vowels</a></li>
 <li><a href="encryption.html">#12 Encryption</a></li>
-<li style="color:purple"><a href="Decryption.html">#13 Decryption</a></li>
+<li><a href="Decryption.html">#13 Decryption</a></li>
 <li><a href="canteen accountant.html">#14 Canteen Accountant</a></li>
 <li><a href="attendance register.html">#15 Attendance Register</a></li>
 <li><a href="amazing year.html">#16 Amazing Year</a></li>
@@ -249,7 +241,7 @@ int main()
 </header>
 <ul class="contact">
 <li class="icon solid fa-envelope"><a href="#">executives@codingstudio.club</a></li>
-<li class="icon solid fa-phone">+91 8179602969</li>
+<li class="icon solid fa-phone">+91 9010342360</li>
 <li class="icon solid fa-home">Vignana Bharthi Instute of Technology<br />
 Aushapur, Ghatkesar, Hyderabad, Telengana - India</li>
 </ul>

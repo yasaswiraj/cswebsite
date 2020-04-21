@@ -3,6 +3,7 @@ function editorView() {
     editor.setTheme("ace/theme/vibrant_ink");
     editor.session.setMode("ace/mode/c_cpp");
     editor.session.setUseSoftTabs(true);
+    editor.setReadOnly(true);
     document.getElementById('editor').style.fontSize = '24px';
 }
 
