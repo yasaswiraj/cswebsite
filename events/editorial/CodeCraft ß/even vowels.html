@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Product of Digits</title>
+<title>Even Vowels</title>
 <link rel="stylesheet" href="assets/css/styles.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript"
 		charset="utf-8"></script>
@@ -98,7 +98,7 @@ td {
 <div class="inner">
 <!-- Header -->
 <header id="header">
-<a href="index.html" class="logo">CodeCraftβ</a>
+<a href="index.html" class="logo">codeCraft β</a>
 <ul class="icons">
 <li><a href="https://github.com/orgs/coding-Studio-vbit" class="icon brands fa-github"><span class="label">Github</span></a></li>
 <li><a href="https://www.instagram.com/coding.studio/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -107,22 +107,17 @@ td {
 <section id="banner">
 	<div class="content">
 		<header>
-			<a href="reasonably sound.html" class="round-button-left"><<span></span></a>
-            <a href="prime usernames.html" class="round-button-right">><span></span></a>
-<h1><font face="Century Schoolbook" color="white">Product of Digits</font></h1>
+			<a href="keypad count.html" class="round-button-left"><<span></span></a>
+            <a href="encryption.html" class="round-button-right">><span></span></a>
+<h1><font face="Century Schoolbook" color="white">Even Vowels</font></h1>
 <p>
 	<font face="Century Schoolbook" color="white">TIME LIMIT = 1 SEC.</font>
 </p>
 </header>
 <div class="problem">
 <ul>
-<li><font size="4" color="white">The natural numbers begin from 1 and go on up to ∞.<br/>Given N indices, find the product of the digits that lie on those indices.<br/>
-NOTE:
-<ul>
-<li>Consider that the natural numbers are zero-indexed i.e. the index of the first number in the set of natural numbers is 0, the index of the second number is 1 and so on.</li>
-<li>Consider that all the natural numbers are written like a string '1234567891011121314….'</li></ul><br/>
-Now, let D be a function that takes an index as it's input and returns the digit that lies on that index.<br/>
-D(0)=1;D(1)=2;D(2)=3 and so on…</li></ul></font></li>
+<li><font size="4" color="white">The English faculty corrects hundreds of answer sheets every year. One of the many questions that are asked is for the students to write an essay. Weirdly, marks assigned for an essay depends on the number of vowels present in each word. This year, the English faculty has asked for your help to make their job easier.
+Given the length of the essay (in number of characters) and the essay itself, print the number of vowels present in each word.</font></li>
 </ul>
 </div>
 	<table>
@@ -134,13 +129,12 @@ D(0)=1;D(1)=2;D(2)=3 and so on…</li></ul></font></li>
 	</thead>
 	<tbody>
 		<tr>
-	<td  ><font size="4" color="white" >First line will contain N, number of indices.<br/>Second line will contain the Ni indices, each separated by a space.</font></td>
-	<td  ><font size="4" color="white">Print the product of the digits that lie on those indices.</font></td>
+	<td  ><font size="4" color="white" >First line will contain N, number of characters in the essay.<br/>The next line will contain the essay itself.</font></td>
+			<td  ><font size="4" color="white">Print the number of vowels present in each word on a new line.</font></td>
 		</tr>
 </table>
 <b><font size="5" color="white">Constraints</font></b>
-  <ul><li><font size="4" color="white">1 ≤ N ≤ 10</font></li>
-  <li><font size="4" color="white">1 ≤ Ni ≤ 1000</font></li></ul>
+  <ul><li><font size="4" color="white">1 ≤ N≤ 10<sup>4</sup></font></li></ul>
 	<fieldset style="width:50%">
 	<legend>
 		<b><td><font color="white" size ="5">Example Test Case</font></td></b>
@@ -156,8 +150,8 @@ D(0)=1;D(1)=2;D(2)=3 and so on…</li></ul></font></li>
 	</thead>
 	<tbody>
 		<tr>
-		<td><font color="white">5<br/>1 2 3 4 5</font></td>
-		<td><font color="white">720</font></td>
+		<td><font color="white">11<br/>Hello World</font></td>
+		<td><font color="white">2<br/>1</font></td>
 	</tr>
 	</tbody>
 </table>
@@ -175,35 +169,36 @@ D(0)=1;D(1)=2;D(2)=3 and so on…</li></ul></font></li>
 		<table>
 			<tbody>
 				<div id="parent">
-<!-- Solution in C++ -->
+<!-- Solution in C -->
 <div id="editor">#include &lt;iostream&gt;
-#include&lt;set&gt;
-#include&lt;string&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
 using namespace std;
 int main()
 {
-    int n,i,temp;
-    cin>>n;
-    long product=1;
-    multiset&lt;int&gt; indices; //stores the indices
-    multiset&lt;int&gt;::reverse_iterator it; //to interate in reverse order
-    string digits; //to store number as string
-     //take indices
-    for(i=0;i&lt;n;i++)
+    int n,i,vc=0; // vc is the vowel count.
+    string ip;
+    cin>>n; //take in N
+    vector&lt;int&gt; op; //to store all the vowel counts in the string.
+    cin.ignore(32767,'\n'); //ignore everything until a newline(inclusively).
+    getline(cin,ip); //take in the string
+     for(i=0;i<=n;i++) //for each character in the n characters of the string
     {
-        cin>>temp;
-        indices.insert(temp);
+        if(ip[i]==' '||i==n) //if it is space, it means we completed reading a word.so store the count
+        {
+            op.push_back(vc);
+            vc = 0; //reset vowel count
+        }
+        else
+        {
+            switch(ip[i]) //if it is a vowel, increment vowel count
+            {
+                case 'a':case 'A':case 'e':case 'E':case 'i':case 'I':case 'o':case 'O':case 'u':case 'U': vc++; break;
+            }
+        }
     }
-
-    //start from last
-    it = indices.rbegin();
-     //append each number to string.
-       for(i=1;i<=*it+1;i++)
-         digits += to_string(i);
-   //get the digit at index and multiply with product.
-      for(it=indices.rbegin();it!=indices.rend();++it)
-        product *= (digits[*it]-48); //convert to int and multiply
-    cout&lt;&lt;product; //display product.
+    for(i=0;i&lt;op.size();i++) //print all vowel counts
+        cout&lt;&lt;op[i]<<'\n';
     return 0;
 }
 </div>
@@ -231,11 +226,11 @@ int main()
 <li><a href="spacious maximus.html">#4 Spacious Maximus</a></li>
 <li><a href="samosas.html">#5 Samosas</a></li>
 <li><a href="reasonably sound.html">#6 Reasonably Sound</a></li>
-<li style="color:purple"><a href="product of digits.html">#7 Product of Digits</a></li>
+<li><a href="product of digits.html">#7 Product of Digits</a></li>
 <li><a href="prime usernames.html">#8 Prime Usernames</a></li>
 <li><a href="path shifter.html">#9 Path Shifter </a></li>
 <li><a href="keypad count.html">#10 Keypad Count</a></li>
-<li><a href="even vowels.html">#11 Even Vowels</a></li>
+<li style="color:purple"><a href="even vowels.html">#11 Even Vowels</a></li>
 <li><a href="encryption.html">#12 Encryption</a></li>
 <li><a href="Decryption.html">#13 Decryption</a></li>
 <li><a href="canteen accountant.html">#14 Canteen Accountant</a></li>
@@ -251,7 +246,7 @@ int main()
 </header>
 <ul class="contact">
 <li class="icon solid fa-envelope"><a href="#">executives@codingstudio.club</a></li>
-<li class="icon solid fa-phone">+91 8179602969</li>
+<li class="icon solid fa-phone">+91 9010342360</li>
 <li class="icon solid fa-home">Vignana Bharthi Instute of Technology<br />
 Aushapur, Ghatkesar, Hyderabad, Telengana - India</li>
 </ul>

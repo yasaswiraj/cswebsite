@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Samosas</title>
+<title>Prime Usernames</title>
 <link rel="stylesheet" href="assets/css/styles.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript"
 		charset="utf-8"></script>
@@ -98,7 +98,7 @@ td {
 <div class="inner">
 <!-- Header -->
 <header id="header">
-<a href="index.html" class="logo">CodeCraftβ</a>
+<a href="index.html" class="logo">codeCraft β</a>
 <ul class="icons">
 <li><a href="https://github.com/orgs/coding-Studio-vbit" class="icon brands fa-github"><span class="label">Github</span></a></li>
 <li><a href="https://www.instagram.com/coding.studio/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -107,16 +107,16 @@ td {
 <section id="banner">
 	<div class="content">
 		<header>
-			<a href="spacious maximus.html" class="round-button-left"><<span></span></a>
-            <a href="reasonably sound.html" class="round-button-right">><span></span></a>
-<h1><font face="Century Schoolbook" color="white">Samosas</font></h1>
+			<a href="product of digits.html" class="round-button-left"><<span></span></a>
+            <a href="path shifter.html" class="round-button-right">><span></span></a>
+<h1><font face="Century Schoolbook" color="white">Prime Usernames</font></h1>
 <p>
 	<font face="Century Schoolbook" color="white">TIME LIMIT = 1 SEC.</font>
 </p>
 </header>
 <div class="problem">
 <ul>
-<li><font size="4" color="white">Who doesn't love those hot, delicious samosas in the canteen every evening? The majority of the rush near the counter is only due to those samosas. Hundreds of samosas vanish in less than five minutes. Due to this, it becomes hard for the canteen people to keep track of how many samosas they sell each day. They're now asking for your help to deal with this issue.<br/>Given the number of samosas they sell each day in a week, print their week's average</font></li>
+<li><font size="4" color="white">CodeChef decided to gift 'Prime Usernames' to the top performers of their March Long Contest 2020. But CodeChef's administrators have tons of other work to do, so they have asked you to find out if a given username is a Prime Username or not.<br/>A Prime Username is a username whose number of unique characters is a prime number.</font></li>
 </ul>
 </div>
 	<table>
@@ -128,12 +128,12 @@ td {
 	</thead>
 	<tbody>
 		<tr>
-	<td  ><font size="4" color="white" >Six lines containing the number of samosas sold on each day.</font></td>
-	<td  ><font size="4" color="white">Print the average number of samosas sold that week, accurate to two decimal places.</font></td>
+	<td  ><font size="4" color="white" >The first line of the input contains N - the length of the username.<br/>The second line contains the username itself. Note that the username is case-sensitive (i.e. 'a' and 'A' are considered to be different characters) and contains numbers and special characters.</font></td>
+	<td  ><font size="4" color="white">Print "YES" if the given username is a Prime Username. Otherwise, print "NO" (without the double quotes).</font></td>
 		</tr>
 </table>
 <b><font size="5" color="white">Constraints</font></b>
-  <ul><li><font size="4" color="white">1 ≤ Number of samosas sold each day ≤ 10<sup>9</sup></font></li></ul>
+  <ul><li><font size="4" color="white">1 ≤ N ≤ 10<sup>6</sup></font></li></ul>
 	<fieldset style="width:50%">
 	<legend>
 		<b><td><font color="white" size ="5">Example Test Case</font></td></b>
@@ -149,8 +149,8 @@ td {
 	</thead>
 	<tbody>
 		<tr>
-		<td><font color="white">100<br/>200<br/>100<br/>300<br/>400<br/>500</font></td>
-		<td><font color="white">266.67</font></td>
+		<td><font color="white">6<br/>abcda*</font></td>
+		<td><font color="white">YES</font></td>
 	</tr>
 	</tbody>
 </table>
@@ -169,18 +169,33 @@ td {
 			<tbody>
 				<div id="parent">
 <!-- Solution in C++ -->
-<div id="editor">#include &lt;cstdio&gt;
+<div id="editor">#include &lt;iostream&gt;
+#include&lt;set&gt;
+#include&lt;string&gt;
+using namespace std;
+bool isPrime(long long int n) //this function checks if a given number is prime or not.
+{  
+    if (n <= 1)  return false; 
+    if (n <= 3)  return true; 
+    if (n%2 == 0 || n%3 == 0) return false; 
+    for (long long int i=5; i*i<=n; i=i+6) 
+        if (n%i == 0 || n%(i+2) == 0) 
+           return false; 
+    return true; 
+}
 int main()
 {
-    long long int quantity[6],i; //there are only six days
-    							 // quantity can be large (upto 10^9) hence using long long
-    double sum=0;	//sum can be large so using double
-    for(i=0;i<6;i++)
-    {
-        scanf("%lld",&quantity[i]);
-        sum += quantity[i];
-    }
-    printf("%.2lf",sum/6.0); //printing upto 2 decimal places using .2lf (for double)
+    int n,i; cin>>n;
+    string ip;
+    cin>>ip;
+    set&lt;long int&gt; unique; //in a set, only unique elements can be inserted. so after inserting
+                            // all the character fo the string, only the unique characters are left.
+    for(i=0;i&lt;n;i++)
+        unique.insert(ip[i]); //inserting all the characters in the string
+    if(isPrime(unique.size())) //size fo set is equal to number of unique characters.If it sprime, print YES
+        cout<<"YES";
+    else
+        cout<<"NO"; // else print NO
     return 0;
 }
 </div>
@@ -206,10 +221,10 @@ int main()
 <li><a href="the Queue of doubts.html">#2 The Queue of Doubts</a></li>
 <li><a href="summation of primes.html">#3 Summation of Primes</a></li>
 <li><a href="spacious maximus.html">#4 Spacious Maximus</a></li>
-<li style="color:purple"><a href="samosas.html">#5 Samosas</a></li>
+<li><a href="samosas.html">#5 Samosas</a></li>
 <li><a href="reasonably sound.html">#6 Reasonably Sound</a></li>
 <li><a href="product of digits.html">#7 Product of Digits</a></li>
-<li><a href="prime usernames.html">#8 Prime Usernames</a></li>
+<li style="color:purple"><a href="prime usernames.html">#8 Prime Usernames</a></li>
 <li><a href="path shifter.html">#9 Path Shifter </a></li>
 <li><a href="keypad count.html">#10 Keypad Count</a></li>
 <li><a href="even vowels.html">#11 Even Vowels</a></li>
@@ -228,7 +243,7 @@ int main()
 </header>
 <ul class="contact">
 <li class="icon solid fa-envelope"><a href="#">executives@codingstudio.club</a></li>
-<li class="icon solid fa-phone">+91 8179602969</li>
+<li class="icon solid fa-phone">+91 9010342360</li>
 <li class="icon solid fa-home">Vignana Bharthi Instute of Technology<br />
 Aushapur, Ghatkesar, Hyderabad, Telengana - India</li>
 </ul>
