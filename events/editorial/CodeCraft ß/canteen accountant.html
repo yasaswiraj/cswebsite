@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canteen Accountant</title>
+<link rel="stylesheet" href="assets/css/styles.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<link rel="shortcut icon" href="white_png.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		.round-button-left {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: left;
+	}
+	.round-button:hover {
+		background: rgb(255, 255, 255);
+	}
+	.round-button-right {
+		display:inline-block;
+		width:60px;
+		height:60px;
+		line-height:60px;
+		border: 2px solid #f5f5f5;
+		border-radius: 50%;
+		color:#f5f5f5;
+		text-align:center;
+		text-decoration:none;
+		background: #555777;
+		box-shadow: 0 0 3px gray;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px;
+		position: relative;
+		float: right;
+	}
+	</style>
+<style>
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+td {
+  height: 50px;
+  vertical-align:top;
+  padding-left: 8px;
+}
+</style>
+<style type="text/css" media="screen">
+	#parent {
+		width: 70%;
+		height: 600px;
+		display: inline-block;
+		position: absolute;
+	}
+
+	#editor {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+</style>
+	</head>
+	<ul class="bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Main -->
+<div id="main">
+<div class="inner">
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo">codeCraft β</a>
+<ul class="icons">
+<li><a href="https://github.com/orgs/coding-Studio-vbit" class="icon brands fa-github"><span class="label">Github</span></a></li>
+<li><a href="https://www.instagram.com/coding.studio/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+</ul>
+</header>
+<section id="banner">
+	<div class="content">
+		<header>
+			<a href="decryption.html" class="round-button-left"><<span></span></a>
+            <a href="attendance register.html" class="round-button-right">><span></span></a>
+<h1><font face="Century Schoolbook" color="white">Canteen Accountant</font></h1>
+<p>
+	<font face="Century Schoolbook" color="white">TIME LIMIT = 1 SEC.</font>
+</p>
+</header>
+<div class="problem">
+<ul>
+<li><font size="4" color="white">People purchase food all throughout the day at the canteen. And it becomes difficult to keep track of all the purchases. To counter this, the owners decided to write every purchase and expenditure in a book. But even this becomes tedious because of thousands of purchases happening every day.<br/>Now the canteen owners are asking for your help to design a simple app to make note of purchases and expenditures and give closing balance at the end of the day. The app only has two commands - GET and GIVE.<br/>There are N purchases every day, and GET indicates when money comes in because of a sale and GIVE indicates money going out.Sometimes there may be spelling mistakes in commands. If you find spelling mistakes, ignore them.
+<br/>Assume that starting balance = 0.</font></li>
+</ul>
+</div>
+	<table>
+		<thead>
+			<tr>
+			<b><u><td><font size="5" color="white">Input</font></td></u></b>
+	        <b><u><td><font size="5" color="white">Output</font></td></u></b>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+	<td  ><font size="4" color="white" >First line will contain N, number of transactions. Then the transactions follow.<br/>Each transaction contains of a command - GET or GIVE followed by the amount after a single space.</font></td>
+			<td  ><font size="4" color="white">Print the closing balance.</font></td>
+		</tr>
+</table>
+<b><font size="5" color="white">Constraints</font></b>
+  <ul><li><font size="4" color="white">1 ≤ N ≤ 1000</font></li>
+  	<li><font size="4" color="white">1 ≤ Transaction Amount ≤ 1000</font></li></ul>
+	<fieldset style="width:50%">
+	<legend>
+		<b><td><font color="white" size ="5">Example Test Case</font></td></b>
+	</legend>
+	<table>
+			<thead>
+			<tr>
+			<b><td><font size="4" color="white">Input</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td></b>
+	        <b><td><font size="4" color="white">Output</font></td></b>
+		</tr>
+
+	</tbody>
+	</thead>
+	<tbody>
+		<tr>
+		<td><font color="white">5<br/>GET 100<br/>GIVE 50<br/>GIVE 25<br/>GET 75<br/>GIVE 50</font></td>
+		<td><font color="white">50</font></td>
+	</tr>
+	</tbody>
+</table>
+	</fieldset>
+	<fieldset style="width:40%">
+		<legend>
+			<u>
+				<b>
+					<font size="4" color="white">Solution</font>
+				</b>
+			</u>
+			<br><br>
+			<button onclick="myFunction()">View</button>
+		</legend>
+		<table>
+			<tbody>
+				<div id="parent">
+<!-- Solution in C -->
+<div id="editor">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+ int main()
+ {
+     long balance=0; int n,amount;
+     cin>>n;//take n
+     string command;//to store command
+     while(n--)
+     {
+         cin>>command>>amount; //get command and amount
+         if(command=="GET") //GET
+            balance+=amount;
+         else if(command=="GIVE") //GIVE
+            balance-=amount;
+         else //SPELLING MISTAKE
+            continue;
+     }
+     cout&lt;&lt;balance;
+     return 0;
+ }
+</div>
+				</div>
+<script>
+	document.getElementById("editor").style.display = "none";
+</script>
+			</tbody>
+		</table>
+		</fieldset>
+</section>
+</div>
+</div>
+<!-- Sidebar -->
+<div id="sidebar">
+<div class="inner">
+<!-- Menu -->
+<nav id="menu">
+<header class="major">
+</header>
+<ul>
+<li><a href="thieves.html">#1 Thieves</a></li>
+<li><a href="the Queue of doubts.html">#2 The Queue of Doubts</a></li>
+<li><a href="summation of primes.html">#3 Summation of Primes</a></li>
+<li><a href="spacious maximus.html">#4 Spacious Maximus</a></li>
+<li><a href="samosas.html">#5 Samosas</a></li>
+<li><a href="reasonably sound.html">#6 Reasonably Sound</a></li>
+<li><a href="product of digits.html">#7 Product of Digits</a></li>
+<li><a href="prime usernames.html">#8 Prime Usernames</a></li>
+<li><a href="path shifter.html">#9 Path Shifter </a></li>
+<li><a href="keypad count.html">#10 Keypad Count</a></li>
+<li><a href="even vowels.html">#11 Even Vowels</a></li>
+<li><a href="encryption.html">#12 Encryption</a></li>
+<li><a href="Decryption.html">#13 Decryption</a></li>
+<li style="color:purple"><a href="canteen accountant.html">#14 Canteen Accountant</a></li>
+<li><a href="attendance register.html">#15 Attendance Register</a></li>
+<li><a href="amazing year.html">#16 Amazing Year</a></li>
+</ul>
+</nav>
+
+<!-- Section -->
+<section>
+<header class="major">
+<h2>Get in touch</h2>
+</header>
+<ul class="contact">
+<li class="icon solid fa-envelope"><a href="#">executives@codingstudio.club</a></li>
+<li class="icon solid fa-phone">+91 9010342360</li>
+<li class="icon solid fa-home">Vignana Bharthi Instute of Technology<br />
+Aushapur, Ghatkesar, Hyderabad, Telengana - India</li>
+</ul>
+</section>
+<!-- Footer -->
+<footer id="footer">
+<p class="copyright">&copy; coding.Studio();</p>
+</footer>
+</div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
