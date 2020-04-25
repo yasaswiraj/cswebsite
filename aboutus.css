@@ -132,7 +132,6 @@ body{
   }
 
   .card {
-   margin: 30px auto;
    margin-left: auto;
    margin-right: auto;
    width: 300px;
@@ -169,14 +168,22 @@ body{
   }
   .car1{
    text-align: center;
-   padding: 10px;
-   margin: 30px auto;
-  color: #fff; width: 50%;
+   padding: 2%;
+   color: #fff;
+   width: 50%;
+   font-size: 80%;
    background-color: #000000;
    border-radius: 10%;
    transition: 0.7s;
    display: table;
    margin:auto;
+  }
+  @media (min-width: 768px) {
+    .carl{
+      font-size: 2%;
+      width: 10%;
+      padding: 0;
+    }
   }
 
   .row{
@@ -184,7 +191,7 @@ body{
    background-color: #000;
    background-image: linear-gradient(to center,#535353, #272629 );
    justify-content: space-between;
-   margin-bottom: 10rem;
+   margin-bottom: 1%;
   }
   .proj-img .img{
     margin-left: auto;
@@ -201,7 +208,7 @@ body{
   }
   .cards-list a{
     font-size: medium;
-    padding-left: 100px;
+    padding-left: 10px;
     animation-delay: 2s;
     animation: blinkingText 0.2s 2;
   }
@@ -343,8 +350,8 @@ body{
   .hover_img {
   display: none
   }
-  #tenure img:hover .member-profile span{
-  display: none;
+  .member-profile{
+    text-align: center;
   }
 /*  .member-profile:hover .unhover_img{
   display: none;
