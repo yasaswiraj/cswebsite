@@ -18,7 +18,7 @@ body{
 
     .codecraft1 {
       text-align: center;
-     
+
     }
 
     .codecraft1 img {
@@ -28,7 +28,7 @@ body{
 
     .cssoc1 {
       text-align: center;
-      
+
     }
 
     .cssoc1 img {
@@ -130,13 +130,12 @@ body{
     max-width: 100%;
     box-shadow: 2px 2px 0rem 0.1rem #2ff;
   }
-  
+
   .card {
-   margin: 30px auto;
    margin-left: auto;
    margin-right: auto;
    width: 300px;
-   height: 300px;  
+   height: 300px;
    border-radius: 40px;
    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
    cursor: pointer;
@@ -161,39 +160,47 @@ body{
    border-radius: 40px;
    object-fit: cover;
   }
-  
+
   .card:hover {
    transform: scale(0.9, 0.9);
-   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
      -5px -5px 30px 15px rgba(0,0,0,0.22);
   }
   .car1{
    text-align: center;
-   padding: 10px;
-   margin: 30px auto;
-   color: #fff; width: 50%;
+   padding: 2%;
+   color: #fff;
+   width: 50%;
+   font-size: 80%;
    background-color: #000000;
    border-radius: 10%;
    transition: 0.7s;
    display: table;
    margin:auto;
   }
-  
+  @media (min-width: 768px) {
+    .carl{
+      font-size: 2%;
+      width: 10%;
+      padding: 0;
+    }
+  }
+
   .row{
-    font-family: Consolas, monospace; 
+    font-family: Consolas, monospace;
    background-color: #000;
    background-image: linear-gradient(to center,#535353, #272629 );
-   justify-content: space-between;  
-   margin-bottom: 10rem;
+   justify-content: space-between;
+   margin-bottom: 1%;
   }
   .proj-img .img{
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     width: 300px;
     height: 300px;
     border-radius: 40px;
-   
-    
+
+
   }
   .cards-list{
     font-family: 'Press Start 2P';
@@ -201,9 +208,9 @@ body{
   }
   .cards-list a{
     font-size: medium;
-    padding-left: 100px;
+    padding-left: 10px;
     animation-delay: 2s;
-    animation: blinkingText 0.2s 2; 
+    animation: blinkingText 0.2s 2;
   }
   @keyframes blinkingText{
     0%		{ color: white;}
@@ -214,8 +221,8 @@ body{
   * {
    box-sizing: border-box;
   }
-  
-  
+
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -225,7 +232,7 @@ body{
   *:after {
     box-sizing: border-box;
   }
-  
+
   .container {
     margin-right: auto;
     margin-left: auto;
@@ -234,6 +241,7 @@ body{
   }
   @media (min-width: 768px) {
     .container {
+      text-align: center;
       width: 750px;
     }
   }
@@ -256,24 +264,24 @@ body{
       width: 1170px;
     }
   }
-  
+
   .clear {clear: both;}
-  
+
   .separator {
   margin: 0 auto;
       background: rgba(0, 0, 0, 0.2);
       width: 30px;
       height: 5px;
   }
-  
-  
-  
+
+
+
   #tenure {
   padding: 60px 0;
       background: black;
       text-align: center;
   }
-  
+
   #tenure p {
   padding: 20px 0 60px;
       color: rgba(255,255,255, 0.85);
@@ -281,7 +289,7 @@ body{
       font-size: 16px;
       letter-spacing: 0.2px;
   }
-  
+
   #tenure h1 {
     font-family: 'Press Start 2P';
     color: aqua;
@@ -293,14 +301,14 @@ body{
     animation-iteration-count: 2;
     animation-timing-function: ease-in-out;
   }
-  
-  
+
+
   #tenure h4  {
   margin-top: -18px;
   font-size: 22px;
   font-weight: 700;
   }
-  
+
   #tenure h4 span {
   display: block;
       position: relative;
@@ -311,7 +319,7 @@ body{
     padding: 0;
     color: #fff;
   }
-  
+
   #tenure img {
   width: 100%;
   max-width: 240px;
@@ -319,18 +327,17 @@ body{
   border: 15px solid transparent;
   box-shadow: 2px 2px 0px rgb(255,0,255);
   }
-  
+
   #tenure img:hover {
   border: 15px solid rgb(255,0,255);
   position: relative;
   z-index: 10;
-  transition: all 0.1s ease-in;
-  
+  transition: all 0.2s ease-in;
+
   background: rgb(255,0,255);
   }
-  
   #tenure span {
-  
+
   padding: 8px 20px;
   position: relative;
   top: -64px;
@@ -340,22 +347,18 @@ body{
   border-radius: 0 16px 16px 0;
   font-size: 16px;
   }
-  
   .hover_img {
   display: none
   }
-  
-  .member-profile:hover .unhover_img{
+  .member-profile{
+    text-align: center;
+  }
+/*  .member-profile:hover .unhover_img{
   display: none;
   }
-  
+
   .member-profile:hover .hover_img {
   display: block;
-  }
-  
-  #tenure img {max-width: 300px;}
-  
+  }*/
 
-  
-  
-  
+  #tenure img {max-width: 300px;}
