@@ -2051,25 +2051,6 @@ button,
           margin-left: -0.4375em; }
       body.is-preload #sidebar {
         display: none; } }
-  @media screen and (max-width: 736px) {
-    #sidebar .toggle {
-      text-indent: 7.25em;
-      width: 7.25em; }
-      #sidebar .toggle:before {
-        color: #7f888f;
-        margin-left: -0.0625em;
-        margin-top: -0.25em;
-        font-size: 1.1rem;
-        z-index: 1; }
-      #sidebar .toggle:after {
-        background: rgba(222, 225, 226, 0.75);
-        border-radius: 0.375em;
-        content: '';
-        height: 3.5em;
-        left: 1em;
-        position: absolute;
-        top: 1em;
-        width: 5em; } }
 
 /* Header */
 #header {
