@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142866892-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142866892-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official Website of coding.Studio(); the programming forum of VBIT">
     <meta name="keywords" content="Coding Club, VBIT,coding studio, coding, contact">
-    <link rel="shortcut icon" href= "WhiteLogo.png">
-
-
+    <link rel="shortcut icon" href="WhiteLogo.png">
     <title>Contact - coding.Studio();</title>
     <script src="https://kit.fontawesome.com/30baf305ad.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-          font-family: 'Press Start 2P';
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            font-family: 'monospace';
         }
-        ::-moz-placeholder { /* Firefox 19+ */
-          font-family: 'Press Start 2P';
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            font-family: 'monospace';
         }
-        :-ms-input-placeholder { /* IE 10+ */
-          font-family: 'Press Start 2P';
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            font-family: 'monospace';
         }
-        :-moz-placeholder { /* Firefox 18- */
-          font-family: 'Press Start 2P';
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            font-family: 'monospace';
         }
     </style>
 </head>
-
 <body style="background-color: black;">
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html" style="font-family: 'Press Start 2P';font-size:small;">coding.Studio();</a>
+            <a class="navbar-brand" href="index.html"
+                style="font-family: 'Press Start 2P';font-size:small;">coding.Studio();</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse justify-content-end " id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto" style="font-family: 'Press Start 2P';">
                     <li class="nav-item">
@@ -48,9 +60,7 @@
                         <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
-
                         <a class="nav-link" href="./events/editorial/index.html">Editorials</a>
-
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
@@ -68,9 +78,6 @@
             <hr>
         </div>
     </section>
-
-
-
     <div class="container">
         <div class="container">
             <div class="row">
@@ -80,22 +87,23 @@
                             style="background-color: rgba(140,19,211,1); font-family: 'Press Start 2P';"> CONTACT US
                         </div>
                         <div class="card-body" style="font-family: monospace;">
-                            <form>
+                            <form id="mainform" method="POST" action="contactus.php">
                                 <div class="form-group">
                                     <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
-                                        placeholder="Enter name" required>
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        aria-describedby="emailHelp" placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                        placeholder="Enter email" required>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        aria-describedby="emailHelp" placeholder="Enter your email address" required>
                                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                         anyone else.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="6"
+                                        required></textarea>
                                 </div>
                                 <div class="mx-auto">
                                     <button type="submit" class="btn btn-primary text-right"
@@ -113,7 +121,9 @@
                             <p><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> <b>Vignana Bharathi Institute
                                     of Technology, Ghatkesar, Hyderabad.</b></p>
                             <p><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                <b>executives@codingstudio.club</b></p>
+                                <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                        data-cfemail="eb8e938e889e9f829d8e98ab88848f82858c989f9e8f8284c588879e89">[email&#160;protected]</a></b>
+                            </p>
                             <p><i class="fa fa-phone fa-2x" aria-hidden="true"></i> <b>+91 9010342360</b></p>
                             <a href="https://www.instagram.com/coding.studio/"
                                 style="padding-right: 13%; color: black;"><i class="fab fa-instagram"
@@ -121,22 +131,22 @@
                             <a href="https://github.com/coding-Studio-vbit/"
                                 style="padding-right: 13%; color: black;"><i class="fab fa-github"
                                     style="font-size:48px"></i></a>
-                            <!-- <a href="" style="padding-right: 13%; color: black;"><i class="fab fa-facebook" style="font-size:48px"></i></a> -->
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="row" style="font-family: monospace;">
+            <div class="row" style="font-family: 'Press Start 2P';">
                 <div class="col">
                     <div class="card">
-                        <div class="card-header  text-white" style="background-color: rgba(140,19,211,1)"> Newsletters
+                        <div class="card-header  text-white" style="background-color: rgba(140,19,211,1)"> NEWSLETTER
                         </div>
                         <div class="card-body">
-                            <form>
-                                <div class="col-12 col-sm-4"><label for="email" class="sr-only">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                            <form id="mainform" method="POST" action="newsletter.php">
+                                <div class="col-12 col-sm-4"><label for="email" class="sr-only">Enter email</label>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Enter your email address">
                                 </div><br>
                                 <div class="col-12 col-sm-4"><button type="submit"
                                         class="btn btn-default btn-block btn-dark"
@@ -147,7 +157,7 @@
                 </div>
             </div>
         </div>
-
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
@@ -162,7 +172,8 @@
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-sm-6 ">
-                        <img src="white_png.png" alt="CODERS ARE ALWAYS WELCOME " style="height: 80%; width: 50%; background-color: black;">
+                        <img src="white_png.png" alt="CODERS ARE ALWAYS WELCOME "
+                            style="height: 80%; width: 50%; background-color: black;">
                         <br />
                         <h6>
                             <p>We're always open for people who are enthusiastic about
@@ -171,7 +182,6 @@
                             </p>
                         </h6>
                     </div>
-
                 </div>
                 <div class="row copyright">
                     <div class="col-md-12 text-center">
@@ -182,8 +192,5 @@
                 </div>
         </footer>
     </div>
-
-
 </body>
-
 </html>
