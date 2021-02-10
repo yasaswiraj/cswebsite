@@ -25,10 +25,12 @@ if ($conn->connect_error) {
 //$unique_code=rand(0000,9999);
 $sql = "INSERT INTO recruitments (name, roll, domain, email, phone, year, branch, section, question, response) 
 				VALUES('$name','$roll','$domain[0]','$email','$phone','$year[0]','$branch[0]','$section[0]','$question','$response')";
+			$suc = "success";
+			$fail = "fail";
 			if ($conn->query($sql) === TRUE) {
-				echo "success";
+				echo json_encode($suc);
 } else {
-echo "fail";
+echo json_encode($fail);
 }
 
 $conn->close();

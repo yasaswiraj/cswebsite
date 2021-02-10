@@ -15,7 +15,6 @@
                     robotImage: "https://avatars2.githubusercontent.com/u/44554603?s=280&v=4",
 
                     submitCallback: function () {
-                        conversationalForm.addRobotChatResponse("Alright, you're done. Keep an eye on your inbox!");
 			var formData = conversationalForm.getFormData(true);
 			formData['ibques'] = q;
 			send(formData);    
@@ -66,29 +65,39 @@
                 }
 	};
 
-
 function send(formData){
+	function done(){
+		window.ConversationalForm.addRobotChatResponse(
+				"Alright, you're done. Keep an eye on your inbox!"
+			);
+	}
+	function notDone(){
+	window.ConversationalForm.addRobotChatResponse(
+			"Something went wrong :( \n Please refresh the page and try again. \n Or drop us an email at executives@codingstudio.club"
+		);
+	}
        	 	$.ajax({
             		type : 'post',
             		url : 'register.php',
             		data : formData,
             		dataType : 'json',
             		encode : true,
+			context : this,
 
             		success : function(response){
-				console.log(response);
-			response = JSON.parse(response);
+			console.log(response);
 
-                if(response== "ok"){
-			console.log('helllo');
-                }else{
-
-                    console.log('erro');
-                }
-
-            }
-
+                if(response == "success")
+				{
+					done();
+				}
+				else{
+					notDone();
+		
+				}
+			}
         });
+
 }
 
 </script>	
