@@ -29,9 +29,20 @@ $sql = "INSERT INTO recruitments (name, roll, domain, email, phone, year, branch
 			$fail = "fail";
 			if ($conn->query($sql) === TRUE) {
 				echo json_encode($suc);
-} else {
-echo json_encode($fail);
-}
+			} else {
+				echo json_encode($fail);
+			}
+			
+			
+			function mailing(){ 
+				  $message = "<html> hi </html>";                                                                                                                                                                                                                $sender = "executives@codingstudio.club";                                                                                                                                                                                                    $subject = "succesfully registered for codingstudio";                                                                                                                                                                                        $headers = 'From: codingstudio Admin <excutives@codingstudio.club>' . "\r\n";                                                                                                                                                                if(mail($email, $subject, $message, $headers)){
+				          echo "done";
+					    }else{
+						              echo "no";
+				 }
+
+
+			}
 
 $conn->close();
 ?>
