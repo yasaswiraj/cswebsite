@@ -1,21 +1,4 @@
-<?php
-$name="saravanan";
-$email = "jvs.ravanan@gmail.com";
-
-$subject = "My subject";
-
-$from="executives@codingstudio.club";
-
-
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
- 
-// Create email headers
-$headers .= 'From: '.$from."\r\n".
-'Reply-To: '.$from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-
-$message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html style="width: 100%; font-family: arial, \'helvetica neue\', helvetica, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0; margin: 0;">
     <head>
         <meta charset="UTF-8" />
@@ -289,35 +272,10 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                 flex: 33.33%;
                 padding: 5px;
             }
-            .game-button {
-                background-color: #34265f;
-                border: none;
-                border-radius: 12px;
-                color: white !important;
-                padding: 15px 32px;
-                text-align: center;
-                display: block;
-                width: 175px;
-                margin: 0;
-                position: relative;
-
-                left: 35%;
-
-                font-size: 16px;
-
-                cursor: pointer;
-            }
             @media only screen and (max-width: 600px) {
                 #logo {
                     height: 200px !important;
                     width: 200px !important;
-                }
-                .game-button {
-                    padding: 10px 10px;
-                    width: 190px;
-                    margin: 0;
-                    position: relative;
-                    left: 25%;
                 }
             }
         </style>
@@ -406,7 +364,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                                                                     <td style="padding: 0; margin: 0; font-size: 0;" align="center">
                                                                         <img
                                                                             class="adapt-img"
-                                                                            src="https://www.codingstudio.club/register/92931515066045884.jpg"
+                                                                            src="92931515066045884.jpg"
                                                                             alt
                                                                             width="600"
                                                                             style="display: block; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;"
@@ -452,7 +410,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                                                                             <br />
                                                                             <strong><i>So keep an eye on your inbox!</i></strong><br />
                                                                             <br />
-                                                                            Until then, try and beat our high score on PAC-MAN* <a href="https://www.codingstudio.club/register/pacman">here</a> :P<br />
+                                                                            Until then, try and beat our high score on PAC-MAN* below :P<br />
                                                                             <br />
                                                                             The highest scores will be featured on our Instagram. So don\'t forget to take a screenshot of your score and tag us on your story!
                                                                         </p>
@@ -466,6 +424,11 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                               </td>
                               </tr> -->
 
+                                                                <tr style="border-collapse: collapse;">
+                                                                    <td align="center">
+                                                                        <a href="https://www.codingstudio.club/register/pacman" target="_blank"> Play PAC-MAN </a>
+                                                                    </td>
+                                                                </tr>
 
                                                                 <tr style="border-collapse: collapse;">
                                                                     <td align="left" style="padding: 0; margin: 0; padding-bottom: 10px; padding-left: 40px; padding-right: 40px;">
@@ -672,7 +635,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                                                                         <img
                                                                             id="logo"
                                                                             class="adapt-img"
-                                                                            src="https://www.codingstudio.club/register/WhiteLogo.png"
+                                                                            src="WhiteLogo.png"
                                                                             alt
                                                                             style="display: block; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;"
                                                                             width="178"
@@ -765,7 +728,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                                                                                         "
                                                                                     >
                                                                                         <img
-                                                                                            src="https://www.codingstudio.club/register/instagram-circle-colored.png"
+                                                                                            src="instagram-circle-colored.png"
                                                                                             alt="Ig"
                                                                                             title="Follow us"
                                                                                             width="32"
@@ -788,7 +751,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
                                                                                         "
                                                                                     >
                                                                                         <img
-                                                                                            src="https://www.codingstudio.club/register/github-circle-colored.png"
+                                                                                            src="github-circle-colored.png"
                                                                                             alt="GitHub"
                                                                                             title="GitHub"
                                                                                             width="32"
@@ -834,13 +797,5 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
             </table>
         </div>
     </body>
-</html>
-';
+</html>'
 
-if(mail($email,$subject,$message,$headers)){
-	echo "done";
-  }else{
-	  echo "no";
-  }
-
-?>
